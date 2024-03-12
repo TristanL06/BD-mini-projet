@@ -1,0 +1,98 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recette {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recette img {
+    float: right;
+    border-radius: 15px;
+    height: 200px;
+}
+
+.sante {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.8em;
+    width: 200px;
+}
+
+.ligne {
+    display: flex;
+    width: fit-content;
+    background-color: #f2f2f2;
+}
+
+.ligne img {
+    height: 32px;
+    width: 32px;
+}
+
+.cellule {
+    padding: 8px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.sante .ligne {
+    width: 200px;
+}
+
+.sante .cellule {
+    flex: 1;
+    border-right: 1px solid #4CAF50;
+    border-bottom: 1px solid #4CAF50;
+    background-color: #d3ecd4;
+}
+
+.ligne:last-child .cellule {
+    border-bottom: none;
+}
+
+.cellule:last-child {
+    border-right: none;
+}
+
+.infos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos.ligne {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.infos .cellule {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.infos .cellule {
+    border-bottom: none;
+}
+
+.infos .cellule img {
+    margin-right: 5px;
+}

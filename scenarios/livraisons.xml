@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="livraisons.xsl" type="text/xsl"?>
+<!DOCTYPE ROOT [
+    <!ELEMENT ROOT (RECETTES, COMMANDES, COMMENTAIRES, LIVREURS, CLIENTS, PRODUITS, UNITES)>
+
+    <!-- RECETTES -->
+    <!ELEMENT RECETTES (RECETTE+)>
+    <!-- RECETTE -->
+    <!ELEMENT RECETTE (NOM, IMAGE, QUANTITE, DUREE, CUISSON, PRIX, SANTE, INGREDIENTS, PREPARATION)>
+    <!ELEMENT NOM (#PCDATA)>
+    <!ELEMENT IMAGE (#PCDATA)>
+    <!ELEMENT QUANTITE (#PCDATA)>
+    <!ELEMENT DUREE (#PCDATA)>
+    <!ELEMENT CUISSON (#PCDATA)>
+    <!ELEMENT PRIX (#PCDATA)>
+
+    <!ELEMENT SANTE (PROTEINES, GLUCIDES, LIPIDES, VITAMINES, CALCIUM, FER)>
+    <!ELEMENT PROTEINES (#PCDATA)>
+    <!ELEMENT GLUCIDES (#PCDATA)>
+    <!ELEMENT LIPIDES (#PCDATA)>
+    <!ELEMENT VITAMINES (#PCDATA)>
+    <!ELEMENT CALCIUM (#PCDATA)>
+    <!ELEMENT FER (#PCDATA)>
+    
+    <!ELEMENT INGREDIENTS (INGREDIENT+)>
+    <!ELEMENT INGREDIENT EMPTY>
+    <!ATTLIST INGREDIENT id CDATA #REQUIRED>
+    <!ATTLIST INGREDIENT quantite CDATA #REQUIRED>
+    <!ATTLIST INGREDIENT unite CDATA #REQUIRED>    
+
+    <!ELEMENT PREPARATION (ETAPE+)>
+    <!ELEMENT ETAPE (#PCDATA)>
+    <!-- COMMANDES -->
+    <!ELEMENT COMMANDES (COMMANDE+)>
+    <!-- COMMANDE -->
+    <!ELEMENT COMMANDE (RECETTEID, QUANTITE, DATE, CLIENTID, LIVREURID, DETAILS?)>
+    <!ELEMENT RECETTEID (#PCDATA)>
+    <!ELEMENT DATE (#PCDATA)>
+    <!ELEMENT CLIENTID (#PCDATA)>
+    <!ELEMENT LIVREURID (#PCDATA)>
+    <!ELEMENT DETAILS (D_RECETTE?, D_LIVRAISON?)>
+    <!ELEMENT D_RECETTE (#PCDATA)>
+    <!ELEMENT D_LIVRAISON (#PCDATA)>
+    <!-- COMMENTAIRES -->
+    <!ELEMENT COMMENTAIRES (COMMENTAIRE+)>
+    <!-- COMMENTAIRE -->
+    <!ELEMENT COMMENTAIRE (COMMANDEID, DATE, TEXTE, NOTE)>
+    <!ELEMENT AUTEUR (#PCDATA)>
+    <!ELEMENT COMMANDEID (#PCDATA)>
+    <!ELEMENT TEXTE (#PCDATA)>
+    <!ELEMENT NOTE (#PCDATA)>
+    <!-- LIVREURS -->
+    <!ELEMENT LIVREURS (LIVREUR+)>
+    <!-- LIVREUR -->
+    <!ELEMENT LIVREUR (NOM, PRENOM)>
+    <!ATTLIST RECETTE id CDATA #REQUIRED>
+    <!ATTLIST COMMANDE id CDATA #REQUIRED>
+    <!ATTLIST COMMENTAIRE id CDATA #REQUIRED>
+    <!ATTLIST LIVREUR id CDATA #REQUIRED>
+    <!-- CLIENTS -->
+    <!ELEMENT CLIENTS (CLIENT+)>
+    <!-- CLIENT -->
+    <!ELEMENT CLIENT (NOM, PRENOM, ADRESSE, VILLE, CODEPOSTAL, TELEPHONE)>
+    <!ATTLIST CLIENT id CDATA #REQUIRED>
+    <!ELEMENT PRENOM (#PCDATA)>
+    <!ELEMENT ADRESSE (#PCDATA)>
+    <!ELEMENT VILLE (#PCDATA)>
+    <!ELEMENT CODEPOSTAL (#PCDATA)>
+    <!ELEMENT TELEPHONE (#PCDATA)>
+    <!-- PRODUITS -->
+    <!ELEMENT PRODUITS (PRODUIT+)>
+    <!-- PRODUIT -->
+    <!ELEMENT PRODUIT (NOM)>
+    <!ATTLIST PRODUIT id CDATA #REQUIRED>
+    <!-- UNITES -->
+    <!ELEMENT UNITES (UNITE+)>
+    <!-- UNITE -->
+    <!ELEMENT UNITE (#PCDATA)>
+    <!ATTLIST UNITE id CDATA #REQUIRED>
+    <!ATTLIST UNITE short_name CDATA #REQUIRED>
+    <!ATTLIST UNITE short_name CDATA #REQUIRED>
+]>
+
+<ROOT>
+    <RECETTES>
+        <RECETTE id="R1">
+            <NOM>Salade de fruits</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/bDmUDPx9d8Xj4gFDKOKt/bDmUDPx9d8Xj4gFDKOKt--1--zeuai.jpg</IMAGE>
+            <QUANTITE>5</QUANTITE> <!-- en personnes -->
+            <DUREE>10</DUREE> <!-- en minutes -->
+            <CUISSON>0</CUISSON> <!-- en minutes -->
+            <PRIX>10</PRIX> <!-- en euros -->
+            <SANTE>
+                <PROTEINES>5</PROTEINES>
+                <GLUCIDES>20</GLUCIDES>
+                <LIPIDES>5</LIPIDES>
+                <VITAMINES>50</VITAMINES>
+                <CALCIUM>10</CALCIUM>
+                <FER>10</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I1" quantite="2" unite="U4"/>
+                <INGREDIENT id="I2" quantite="2" unite="U4"/>
+                <INGREDIENT id="I3" quantite="2" unite="U4"/>
+                <INGREDIENT id="I4" quantite="2" unite="U4"/>
+                <INGREDIENT id="I5" quantite="1" unite="U2"/>
+                <INGREDIENT id="I6" quantite="1" unite="U4"/>
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Couper les fruits en morceaux</ETAPE>
+                <ETAPE>Ajouter le sucre</ETAPE>
+                <ETAPE>Presser le citron</ETAPE>
+                <ETAPE>Mélanger</ETAPE>
+            </PREPARATION>
+        </RECETTE>
+        <RECETTE id="R2">
+            <NOM>Salade de pâtes</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/UgzKuBalM9oV980yrx8h/UgzKuBalM9oV980yrx8h--1--ao8zf.jpg</IMAGE>
+            <QUANTITE>3</QUANTITE> <!-- en personnes -->
+            <DUREE>15</DUREE> <!-- en minutes -->
+            <CUISSON>10</CUISSON> <!-- en minutes -->
+            <PRIX>7</PRIX> <!-- en euros -->
+            <SANTE>
+                <PROTEINES>15</PROTEINES>
+                <GLUCIDES>25</GLUCIDES>
+                <LIPIDES>10</LIPIDES>
+                <VITAMINES>30</VITAMINES>
+                <CALCIUM>10</CALCIUM>
+                <FER>15</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I7" quantite="200" unite="U1"/>
+                <INGREDIENT id="I8" quantite="2" unite="U4"/>
+                <INGREDIENT id="I9" quantite="1" unite="U4"/>
+                <INGREDIENT id="I10" quantite="1" unite="U4"/>
+                <INGREDIENT id="I11" quantite="1" unite="U4"/>
+                <INGREDIENT id="I12" quantite="1" unite="U2"/>
+                <INGREDIENT id="I13" quantite="1" unite="U2"/>
+                <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Cuire les pâtes</ETAPE>
+                <ETAPE>Couper les légumes en petits morceaux</ETAPE>
+                <ETAPE>Mélanger les pâtes et les légumes</ETAPE>
+                <ETAPE>Ajouter l'huile d'olive, le vinaigre, le sel et le poivre</ETAPE>
+            </PREPARATION>
+        </RECETTE>
+        <RECETTE id="R3">
+            <NOM>Salade de riz</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/2VDr8uqBPnWNmOB3yyEZ/2VDr8uqBPnWNmOB3yyEZ--1--mjjig.jpg</IMAGE>
+            <QUANTITE>4</QUANTITE> <!-- en personnes -->
+            <DUREE>20</DUREE> <!-- en minutes -->
+            <CUISSON>10</CUISSON> <!-- en minutes -->
+            <PRIX>5</PRIX> <!-- en euros -->
+            <SANTE> <!-- en % des AJR -->
+                <PROTEINES>20</PROTEINES>
+                <GLUCIDES>30</GLUCIDES>
+                <LIPIDES>10</LIPIDES>
+                <VITAMINES>40</VITAMINES>
+                <CALCIUM>15</CALCIUM>
+                <FER>20</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I16" quantite="200" unite="U1"/>
+                <INGREDIENT id="I8" quantite="2" unite="U4"/>
+                <INGREDIENT id="I9" quantite="1" unite="U4"/>
+                <INGREDIENT id="I10" quantite="1" unite="U4"/>
+                <INGREDIENT id="I11" quantite="1" unite="U4"/>
+                <INGREDIENT id="I12" quantite="1" unite="U2"/>
+                <INGREDIENT id="I13" quantite="1" unite="U2"/>
+                <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <INGREDIENT id="I17" quantite="1" unite="U4"/>
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Cuire le riz</ETAPE>
+                <ETAPE>Couper les légumes en petits morceaux</ETAPE>
+                <ETAPE>Mélanger le riz et les légumes</ETAPE>
+                <ETAPE>Ajouter le thon, l'huile d'olive, le vinaigre, le sel et le poivre</ETAPE>
+            </PREPARATION>
+        </RECETTE>
+    </RECETTES>
+
+    <COMMANDES>
+        <COMMANDE id="C1">
+            <RECETTEID>R1</RECETTEID>
+            <QUANTITE>5</QUANTITE>
+            <DATE>01/03/2024</DATE>
+            <CLIENTID>P1</CLIENTID>
+            <LIVREURID>L1</LIVREURID>
+            <DETAILS>
+                <D_RECETTE>Allergie aux raisins</D_RECETTE>
+                <D_LIVRAISON>Code de la porte : 1234</D_LIVRAISON>
+            </DETAILS>
+        </COMMANDE>
+        <COMMANDE id="C2">
+            <RECETTEID>R2</RECETTEID>
+            <QUANTITE>3</QUANTITE>
+            <DATE>05/03/2024</DATE>
+            <CLIENTID>P2</CLIENTID>
+            <LIVREURID>L2</LIVREURID>
+            <DETAILS>
+                <D_RECETTE>Salade sans oignon</D_RECETTE>
+            </DETAILS>
+        </COMMANDE>
+        <COMMANDE id="C3">
+            <RECETTEID>R3</RECETTEID>
+            <QUANTITE>4</QUANTITE>
+            <DATE>08/03/2024</DATE>
+            <CLIENTID>P2</CLIENTID>
+            <LIVREURID>L1</LIVREURID>
+        </COMMANDE>
+    </COMMANDES>
+
+    <COMMENTAIRES>
+        <COMMENTAIRE id="M1">
+            <COMMANDEID>C1</COMMANDEID>
+            <DATE>02/03/2024</DATE>
+            <TITRE>Très bon</TITRE>
+            <TEXTE>Excellente salade de fruit, je recommande très fortement !!</TEXTE>
+            <NOTE>4</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M2">
+            <COMMANDEID>C2</COMMANDEID>
+            <DATE>05/03/2024</DATE>
+            <TITRE>Excellent</TITRE>
+            <TEXTE>Très bonne salade de pâtes, je recommande !!</TEXTE>
+            <NOTE>5</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M3">
+            <COMMANDEID>C3</COMMANDEID>
+            <DATE>09/03/2024</DATE>
+            <TITRE>Très bon</TITRE>
+            <TEXTE>Excellente salade de riz, je recommande vraiment</TEXTE>
+            <NOTE>4</NOTE>
+        </COMMENTAIRE>
+    </COMMENTAIRES>
+
+    <LIVREURS>
+        <LIVREUR id="L1">
+            <NOM>Dupont</NOM>
+            <PRENOM>Paul</PRENOM>
+        </LIVREUR>
+        <LIVREUR id="L2">
+            <NOM>Durand</NOM>
+            <PRENOM>Marie</PRENOM>
+        </LIVREUR>
+    </LIVREURS>
+
+    <CLIENTS>
+        <CLIENT id="P1">
+            <NOM>Dupont</NOM>
+            <PRENOM>Paul</PRENOM>
+            <ADRESSE>1 rue des fleurs</ADRESSE>
+            <VILLE>Lille</VILLE>
+            <CODEPOSTAL>59000</CODEPOSTAL>
+            <TELEPHONE>0612345642</TELEPHONE>
+        </CLIENT>
+        <CLIENT id="P2">
+            <NOM>NECLABERT</NOM>
+            <PRENOM>Marie</PRENOM>
+            <ADRESSE>64 rue du bloc</ADRESSE>
+            <VILLE>Biot</VILLE>
+            <CODEPOSTAL>06410</CODEPOSTAL>
+            <TELEPHONE>0721548261</TELEPHONE>
+        </CLIENT>
+    </CLIENTS>
+
+    <PRODUITS>
+        <PRODUIT id="I1">
+            <NOM>banane</NOM>
+        </PRODUIT>
+        <PRODUIT id="I2">
+            <NOM>pomme</NOM>
+        </PRODUIT>
+        <PRODUIT id="I3">
+            <NOM>orange</NOM>
+        </PRODUIT>
+        <PRODUIT id="I4">
+            <NOM>kiwi</NOM>
+        </PRODUIT>
+        <PRODUIT id="I5">
+            <NOM>sucre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I6">
+            <NOM>citron</NOM>
+        </PRODUIT>
+        <PRODUIT id="I7">
+            <NOM>pâtes</NOM>
+        </PRODUIT>
+        <PRODUIT id="I8">
+            <NOM>tomates</NOM>
+        </PRODUIT>
+        <PRODUIT id="I9">
+            <NOM>concombre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I10">
+            <NOM>poivron</NOM>
+        </PRODUIT>
+        <PRODUIT id="I11">
+            <NOM>oignon</NOM>
+        </PRODUIT>
+        <PRODUIT id="I12">
+            <NOM>huile d'olive</NOM>
+        </PRODUIT>
+        <PRODUIT id="I13">
+            <NOM>vinaigre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I14">
+            <NOM>sel</NOM>
+        </PRODUIT>
+        <PRODUIT id="I15">
+            <NOM>poivre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I16">
+            <NOM>riz</NOM>
+        </PRODUIT>
+        <PRODUIT id="I17">
+            <NOM>thon</NOM>
+        </PRODUIT>
+    </PRODUITS>
+
+    <UNITES>
+        <UNITE id="U1" short_name="g">grammes</UNITE>
+        <UNITE id="U2" short_name="càs">cuillères à soupe</UNITE>
+        <UNITE id="U3" short_name="pincée">pincée</UNITE>
+        <UNITE id="U4" short_name="">unité</UNITE>
+    </UNITES>
+</ROOT>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Définition des éléments -->
+  <xs:element name="ROOT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RECETTES"/>
+        <xs:element ref="COMMANDES"/>
+        <xs:element ref="COMMENTAIRES"/>
+        <xs:element ref="LIVREURS"/>
+        <xs:element ref="CLIENTS"/>
+        <xs:element ref="PRODUITS"/>
+        <xs:element ref="UNITES"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Définition des types complexes -->
+  <xs:complexType name="RecetteType">
+    <xs:sequence>
+      <xs:element ref="NOM"/>
+      <xs:element ref="QUANTITE"/>
+      <xs:element ref="DUREE"/>
+      <xs:element ref="CUISSON"/>
+      <xs:element ref="PRIX"/>
+      <xs:element ref="SANTE"/>
+      <xs:element ref="INGREDIENTS"/>
+      <xs:element ref="PREPARATION"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+    <xs:complexType name="RecettesType">
+        <xs:sequence>
+        <xs:element ref="RECETTE" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+  <xs:complexType name="SanteType">
+    <xs:sequence>
+      <xs:element ref="PROTEINES"/>
+      <xs:element ref="GLUCIDES"/>
+      <xs:element ref="LIPIDES"/>
+      <xs:element ref="VITAMINES"/>
+      <xs:element ref="CALCIUM"/>
+      <xs:element ref="FER"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IngredientType">
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="quantite" type="xs:string" use="required"/>
+    <xs:attribute name="unite" type="xs:string" use="required"/>
+  </xs:complexType>
+
+    <xs:complexType name="IngredientsType">
+        <xs:sequence>
+        <xs:element ref="INGREDIENT" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+  <xs:complexType name="PreparationType">
+    <xs:sequence>
+      <xs:element ref="ETAPE" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CommandeType">
+    <xs:sequence>
+      <xs:element ref="RECETTEID"/>
+      <xs:element ref="QUANTITE"/>
+      <xs:element ref="DATE"/>
+      <xs:element ref="CLIENTID"/>
+      <xs:element ref="LIVREURID"/>
+      <xs:element ref="DETAILS" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+    <xs:complexType name="CommandesType">
+        <xs:sequence>
+        <xs:element ref="COMMANDE" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+  <xs:complexType name="DetailsType">
+    <xs:sequence>
+      <xs:element ref="D_RECETTE" minOccurs="0"/>
+      <xs:element ref="D_LIVRAISON" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CommentaireType">
+    <xs:sequence>
+      <xs:element ref="COMMANDEID"/>
+      <xs:element ref="DATE"/>
+      <xs:element ref="TEXTE"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+    <xs:complexType name="CommentairesType">
+        <xs:sequence>
+        <xs:element ref="COMMENTAIRE" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+  <xs:complexType name="LivreursType">
+    <xs:sequence>
+      <xs:element ref="LIVREUR" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LivreurType">
+    <xs:sequence>
+      <xs:element ref="NOM"/>
+      <xs:element ref="PRENOM"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ClientsType">
+    <xs:sequence>
+      <xs:element ref="CLIENT" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ClientType">
+    <xs:sequence>
+      <xs:element ref="NOM"/>
+      <xs:element ref="PRENOM"/>
+      <xs:element ref="ADRESSE"/>
+      <xs:element ref="VILLE"/>
+      <xs:element ref="CODEPOSTAL"/>
+      <xs:element ref="TELEPHONE"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ProduitsType">
+    <xs:sequence>
+      <xs:element ref="PRODUIT" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProduitType">
+    <xs:sequence>
+      <xs:element ref="NOM"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="UnitesType">
+    <xs:sequence>
+      <xs:element ref="UNITE" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Définition des éléments -->
+  <xs:element name="RECETTES" type="RecettesType"/>
+  <xs:element name="COMMANDES" type="CommandesType"/>
+  <xs:element name="COMMENTAIRES" type="CommentairesType"/>
+  <xs:element name="LIVREURS" type="LivreursType"/>
+  <xs:element name="CLIENTS" type="ClientsType"/>
+  <xs:element name="PRODUITS" type="ProduitsType"/>
+  <xs:element name="UNITES" type="UnitesType"/>
+
+  <!-- Définition des éléments internes -->
+  <xs:element name="RECETTE" type="RecetteType"/>
+  <xs:element name="NOM" type="xs:string"/>
+  <xs:element name="QUANTITE" type="xs:string"/>
+  <xs:element name="DUREE" type="xs:string"/>
+  <xs:element name="CUISSON" type="xs:string"/>
+  <xs:element name="PRIX" type="xs:string"/>
+  <xs:element name="SANTE" type="SanteType"/>
+  <xs:element name="PROTEINES" type="xs:string"/>
+  <xs:element name="GLUCIDES" type="xs:string"/>
+  <xs:element name="LIPIDES" type="xs:string"/>
+  <xs:element name="VITAMINES" type="xs:string"/>
+  <xs:element name="CALCIUM" type="xs:string"/>
+  <xs:element name="FER" type="xs:string"/>
+  <xs:element name="INGREDIENTS" type="IngredientsType"/>
+  <xs:element name="INGREDIENT" type="IngredientType"/>
+  <xs:element name="PREPARATION" type="PreparationType"/>
+  <xs:element name="ETAPE" type="xs:string"/>
+  <xs:element name="DETAILS" type="DetailsType"/>
+  <xs:element name="D_RECETTE" type="xs:string"/>
+  <xs:element name="D_LIVRAISON" type="xs:string"/>
+  <xs:element name="COMMANDE" type="CommandeType"/>
+  <xs:element name="RECETTEID" type="xs:string"/>
+  <xs:element name="DATE" type="xs:string"/>
+  <xs:element name="CLIENTID" type="xs:string"/>
+  <xs:element name="LIVREURID" type="xs:string"/>
+  <xs:element name="COMMENTAIRE" type="CommentaireType"/>
+  <xs:element name="COMMANDEID" type="xs:string"/>
+  <xs:element name="TEXTE" type="xs:string"/>
+  <xs:element name="LIVREUR" type="LivreursType"/>
+  <xs:element name="PRENOM" type="xs:string"/>
+  <xs:element name="CLIENT" type="ClientType"/>
+  <xs:element name="ADRESSE" type="xs:string"/>
+  <xs:element name="VILLE" type="xs:string"/>
+  <xs:element name="CODEPOSTAL" type="xs:string"/>
+  <xs:element name="TELEPHONE" type="xs:string"/>
+  <xs:element name="PRODUIT" type="ProduitType"/>
+  <xs:element name="UNITE" type="UnitesType"/>
+
+</xs:schema>
