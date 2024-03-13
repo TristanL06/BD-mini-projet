@@ -27,3 +27,8 @@ Déposez un zip contenant :
 - Vos fichiers XSLT
 - Votre code source Java ou Python
 - Les fichiers output produits
+
+
+Imaginez un 5ème scénario nécessitant l'exploitation d'une partie de ces données XML selon une nouvelle structuration et dans le format JSON et écrivez une feuille de style pour générer automatiquement cette base de données JSON. Produisez le schéma JSON de vos données de sortie.
+> Légumes de saison
+

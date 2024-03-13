@@ -3,36 +3,35 @@
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:template match="/">
-        <catalogue>
-            <!-- Sélection de toutes les recettes et tri selon la note moyenne -->
-            <xsl:apply-templates select="//RECETTE"/>
-            <!--<xsl:sort select="sum(avis_client/note) div count(avis_client)" data-type="number" order="descending"/>
-            </xsl:apply-templates>-->
-        </catalogue>
+        <output>
+            <recettes>
+                <xsl:apply-templates select="//RECETTE"/>
+            </recettes>
+        </output>
     </xsl:template>
 
-    <!-- Modèle de recette -->
     <xsl:template match="RECETTE">
         <recette>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
             <nom>
                 <xsl:value-of select="NOM"/>
             </nom>
-            <image>
-                <xsl:value-of select="IMAGE"/>
-            </image>
-            <note>
-                <xsl:apply-templates select="//COMMENTAIRE"/>
-                <!--<xsl:value-of select="sum(avis_client/note) div count(avis_client)"/>-->
-            </note>
+            <xsl:variable name="related_comments" select="//COMMENTAIRE[COMMANDEID=//COMMANDE[RECETTEID=current()/@id]/@id]"/>
+            <!--
+            <notes>
+                <xsl:for-each select="$related_comments">
+                    <note>
+                        <xsl:value-of select="NOTE"/>
+                    </note>
+                </xsl:for-each>
+            </notes>
+            -->
+            <moyenne>
+                <xsl:value-of select="sum($related_comments/NOTE) div count($related_comments)"/>
+            </moyenne>
+            <xsl:value-of select="//COMMENTAIRE[RECETTEID=current()/@id]/NOTE"/>
         </recette>
-    </xsl:template>
-
-    <xsl:template match="COMMENTAIRE">
-        <xsl:value-of select="COMMANDEID"/>
-        <xsl:if test="//COMMANDE[@id=//COMMENTAIRE[@id=current()]/COMMANDEID]/RECETTEID">
-            <xsl:value-of select="NOTE"/>
-        </xsl:if>
-        <xsl:value-of select="NOTE"/>
-        <xsl:value-of select="//RECETTE[@id=//COMMANDE[@id=current()]/RECETTEID]"/>
     </xsl:template>
 </xsl:stylesheet>

@@ -3,82 +3,83 @@
 <!DOCTYPE ROOT [
     <!ELEMENT ROOT (RECETTES, COMMANDES, COMMENTAIRES, LIVREURS, CLIENTS, PRODUITS, UNITES)>
 
-    <!-- RECETTES -->
-    <!ELEMENT RECETTES (RECETTE+)>
-    <!-- RECETTE -->
-    <!ELEMENT RECETTE (NOM, IMAGE, QUANTITE, DUREE, CUISSON, PRIX, SANTE, INGREDIENTS, PREPARATION)>
-    <!ELEMENT NOM (#PCDATA)>
-    <!ELEMENT IMAGE (#PCDATA)>
-    <!ELEMENT QUANTITE (#PCDATA)>
-    <!ELEMENT DUREE (#PCDATA)>
-    <!ELEMENT CUISSON (#PCDATA)>
-    <!ELEMENT PRIX (#PCDATA)>
+<!-- RECETTES -->
+<!ELEMENT RECETTES (RECETTE+)>
+<!-- RECETTE -->
+<!ELEMENT RECETTE (NOM, IMAGE, QUANTITE, DUREE, CUISSON, PRIX, SANTE, INGREDIENTS, PREPARATION)>
+<!ELEMENT NOM (#PCDATA)>
+<!ELEMENT IMAGE (#PCDATA)>
+<!ELEMENT QUANTITE (#PCDATA)>
+<!ELEMENT DUREE (#PCDATA)>
+<!ELEMENT CUISSON (#PCDATA)>
+<!ELEMENT PRIX (#PCDATA)>
 
-    <!ELEMENT SANTE (PROTEINES, GLUCIDES, LIPIDES, VITAMINES, CALCIUM, FER)>
-    <!ELEMENT PROTEINES (#PCDATA)>
-    <!ELEMENT GLUCIDES (#PCDATA)>
-    <!ELEMENT LIPIDES (#PCDATA)>
-    <!ELEMENT VITAMINES (#PCDATA)>
-    <!ELEMENT CALCIUM (#PCDATA)>
-    <!ELEMENT FER (#PCDATA)>
-    
-    <!ELEMENT INGREDIENTS (INGREDIENT+)>
-    <!ELEMENT INGREDIENT EMPTY>
-    <!ATTLIST INGREDIENT id CDATA #REQUIRED>
-    <!ATTLIST INGREDIENT quantite CDATA #REQUIRED>
-    <!ATTLIST INGREDIENT unite CDATA #REQUIRED>    
+<!ELEMENT SANTE (PROTEINES, GLUCIDES, LIPIDES, VITAMINES, CALCIUM, FER)>
+<!ELEMENT PROTEINES (#PCDATA)>
+<!ELEMENT GLUCIDES (#PCDATA)>
+<!ELEMENT LIPIDES (#PCDATA)>
+<!ELEMENT VITAMINES (#PCDATA)>
+<!ELEMENT CALCIUM (#PCDATA)>
+<!ELEMENT FER (#PCDATA)>
 
-    <!ELEMENT PREPARATION (ETAPE+)>
-    <!ELEMENT ETAPE (#PCDATA)>
-    <!-- COMMANDES -->
-    <!ELEMENT COMMANDES (COMMANDE+)>
-    <!-- COMMANDE -->
-    <!ELEMENT COMMANDE (RECETTEID, QUANTITE, DATE, CLIENTID, LIVREURID, DETAILS?)>
-    <!ELEMENT RECETTEID (#PCDATA)>
-    <!ELEMENT DATE (#PCDATA)>
-    <!ELEMENT CLIENTID (#PCDATA)>
-    <!ELEMENT LIVREURID (#PCDATA)>
-    <!ELEMENT DETAILS (D_RECETTE?, D_LIVRAISON?)>
-    <!ELEMENT D_RECETTE (#PCDATA)>
-    <!ELEMENT D_LIVRAISON (#PCDATA)>
-    <!-- COMMENTAIRES -->
-    <!ELEMENT COMMENTAIRES (COMMENTAIRE+)>
-    <!-- COMMENTAIRE -->
-    <!ELEMENT COMMENTAIRE (COMMANDEID, DATE, TEXTE, NOTE)>
-    <!ELEMENT AUTEUR (#PCDATA)>
-    <!ELEMENT COMMANDEID (#PCDATA)>
-    <!ELEMENT TEXTE (#PCDATA)>
-    <!ELEMENT NOTE (#PCDATA)>
-    <!-- LIVREURS -->
-    <!ELEMENT LIVREURS (LIVREUR+)>
-    <!-- LIVREUR -->
-    <!ELEMENT LIVREUR (NOM, PRENOM)>
-    <!ATTLIST RECETTE id CDATA #REQUIRED>
-    <!ATTLIST COMMANDE id CDATA #REQUIRED>
-    <!ATTLIST COMMENTAIRE id CDATA #REQUIRED>
-    <!ATTLIST LIVREUR id CDATA #REQUIRED>
-    <!-- CLIENTS -->
-    <!ELEMENT CLIENTS (CLIENT+)>
-    <!-- CLIENT -->
-    <!ELEMENT CLIENT (NOM, PRENOM, ADRESSE, VILLE, CODEPOSTAL, TELEPHONE)>
-    <!ATTLIST CLIENT id CDATA #REQUIRED>
-    <!ELEMENT PRENOM (#PCDATA)>
-    <!ELEMENT ADRESSE (#PCDATA)>
-    <!ELEMENT VILLE (#PCDATA)>
-    <!ELEMENT CODEPOSTAL (#PCDATA)>
-    <!ELEMENT TELEPHONE (#PCDATA)>
-    <!-- PRODUITS -->
-    <!ELEMENT PRODUITS (PRODUIT+)>
-    <!-- PRODUIT -->
-    <!ELEMENT PRODUIT (NOM)>
-    <!ATTLIST PRODUIT id CDATA #REQUIRED>
-    <!-- UNITES -->
-    <!ELEMENT UNITES (UNITE+)>
-    <!-- UNITE -->
-    <!ELEMENT UNITE (#PCDATA)>
-    <!ATTLIST UNITE id CDATA #REQUIRED>
-    <!ATTLIST UNITE short_name CDATA #REQUIRED>
-    <!ATTLIST UNITE short_name CDATA #REQUIRED>
+<!ELEMENT INGREDIENTS (INGREDIENT+)>
+<!ELEMENT INGREDIENT EMPTY>
+<!ATTLIST INGREDIENT id CDATA #REQUIRED>
+<!ATTLIST INGREDIENT quantite CDATA #REQUIRED>
+<!ATTLIST INGREDIENT unite CDATA #REQUIRED>
+
+<!ELEMENT PREPARATION (ETAPE+)>
+<!ELEMENT ETAPE (#PCDATA)>
+<!-- COMMANDES -->
+<!ELEMENT COMMANDES (COMMANDE+)>
+<!-- COMMANDE -->
+<!ELEMENT COMMANDE (RECETTEID, QUANTITE, DATE, CLIENTID, LIVREURID, DETAILS?)>
+<!ELEMENT RECETTEID (#PCDATA)>
+<!ELEMENT DATE (#PCDATA)>
+<!ELEMENT CLIENTID (#PCDATA)>
+<!ELEMENT LIVREURID (#PCDATA)>
+<!ELEMENT DETAILS (D_RECETTE?, D_LIVRAISON?)>
+<!ELEMENT D_RECETTE (#PCDATA)>
+<!ELEMENT D_LIVRAISON (#PCDATA)>
+<!-- COMMENTAIRES -->
+<!ELEMENT COMMENTAIRES (COMMENTAIRE+)>
+<!-- COMMENTAIRE -->
+<!ELEMENT COMMENTAIRE (COMMANDEID, DATE, TITRE, TEXTE, NOTE)>
+<!ELEMENT AUTEUR (#PCDATA)>
+<!ELEMENT COMMANDEID (#PCDATA)>
+<!ELEMENT TITRE (#PCDATA)>
+<!ELEMENT TEXTE (#PCDATA)>
+<!ELEMENT NOTE (#PCDATA)>
+<!-- LIVREURS -->
+<!ELEMENT LIVREURS (LIVREUR+)>
+<!-- LIVREUR -->
+<!ELEMENT LIVREUR (NOM, PRENOM)>
+<!ATTLIST RECETTE id CDATA #REQUIRED>
+<!ATTLIST COMMANDE id CDATA #REQUIRED>
+<!ATTLIST COMMENTAIRE id CDATA #REQUIRED>
+<!ATTLIST LIVREUR id CDATA #REQUIRED>
+<!-- CLIENTS -->
+<!ELEMENT CLIENTS (CLIENT+)>
+<!-- CLIENT -->
+<!ELEMENT CLIENT (NOM, PRENOM, ADRESSE, VILLE, CODEPOSTAL, TELEPHONE)>
+<!ATTLIST CLIENT id CDATA #REQUIRED>
+<!ELEMENT PRENOM (#PCDATA)>
+<!ELEMENT ADRESSE (#PCDATA)>
+<!ELEMENT VILLE (#PCDATA)>
+<!ELEMENT CODEPOSTAL (#PCDATA)>
+<!ELEMENT TELEPHONE (#PCDATA)>
+<!-- PRODUITS -->
+<!ELEMENT PRODUITS (PRODUIT+)>
+<!-- PRODUIT -->
+<!ELEMENT PRODUIT (NOM)>
+<!ATTLIST PRODUIT id CDATA #REQUIRED>
+<!-- UNITES -->
+<!ELEMENT UNITES (UNITE+)>
+<!-- UNITE -->
+<!ELEMENT UNITE (#PCDATA)>
+<!ATTLIST UNITE id CDATA #REQUIRED>
+<!ATTLIST UNITE short_name CDATA #REQUIRED>
+<!ATTLIST UNITE short_name CDATA #REQUIRED>
 ]>
 
 <ROOT>
@@ -86,10 +87,10 @@
         <RECETTE id="R1">
             <NOM>Salade de fruits</NOM>
             <IMAGE>https://images.nightcafe.studio/jobs/bDmUDPx9d8Xj4gFDKOKt/bDmUDPx9d8Xj4gFDKOKt--1--zeuai.jpg</IMAGE>
-            <QUANTITE>5</QUANTITE> <!-- en personnes -->
-            <DUREE>10</DUREE> <!-- en minutes -->
-            <CUISSON>0</CUISSON> <!-- en minutes -->
-            <PRIX>10</PRIX> <!-- en euros -->
+            <QUANTITE>5</QUANTITE>            <!-- en personnes -->
+            <DUREE>10</DUREE>            <!-- en minutes -->
+            <CUISSON>0</CUISSON>            <!-- en minutes -->
+            <PRIX>10</PRIX>            <!-- en euros -->
             <SANTE>
                 <PROTEINES>5</PROTEINES>
                 <GLUCIDES>20</GLUCIDES>
@@ -116,10 +117,10 @@
         <RECETTE id="R2">
             <NOM>Salade de pâtes</NOM>
             <IMAGE>https://images.nightcafe.studio/jobs/UgzKuBalM9oV980yrx8h/UgzKuBalM9oV980yrx8h--1--ao8zf.jpg</IMAGE>
-            <QUANTITE>3</QUANTITE> <!-- en personnes -->
-            <DUREE>15</DUREE> <!-- en minutes -->
-            <CUISSON>10</CUISSON> <!-- en minutes -->
-            <PRIX>7</PRIX> <!-- en euros -->
+            <QUANTITE>3</QUANTITE>            <!-- en personnes -->
+            <DUREE>15</DUREE>            <!-- en minutes -->
+            <CUISSON>10</CUISSON>            <!-- en minutes -->
+            <PRIX>7</PRIX>            <!-- en euros -->
             <SANTE>
                 <PROTEINES>15</PROTEINES>
                 <GLUCIDES>25</GLUCIDES>
@@ -149,11 +150,11 @@
         <RECETTE id="R3">
             <NOM>Salade de riz</NOM>
             <IMAGE>https://images.nightcafe.studio/jobs/2VDr8uqBPnWNmOB3yyEZ/2VDr8uqBPnWNmOB3yyEZ--1--mjjig.jpg</IMAGE>
-            <QUANTITE>4</QUANTITE> <!-- en personnes -->
-            <DUREE>20</DUREE> <!-- en minutes -->
-            <CUISSON>10</CUISSON> <!-- en minutes -->
-            <PRIX>5</PRIX> <!-- en euros -->
-            <SANTE> <!-- en % des AJR -->
+            <QUANTITE>4</QUANTITE>            <!-- en personnes -->
+            <DUREE>20</DUREE>            <!-- en minutes -->
+            <CUISSON>10</CUISSON>            <!-- en minutes -->
+            <PRIX>5</PRIX>            <!-- en euros -->
+            <SANTE>                <!-- en % des AJR -->
                 <PROTEINES>20</PROTEINES>
                 <GLUCIDES>30</GLUCIDES>
                 <LIPIDES>10</LIPIDES>
@@ -180,8 +181,41 @@
                 <ETAPE>Ajouter le thon, l'huile d'olive, le vinaigre, le sel et le poivre</ETAPE>
             </PREPARATION>
         </RECETTE>
+        <RECETTE id="R4">
+            <NOM>Crêpes</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/fvKkYQsBzu5lpFFyaIN7/fvKkYQsBzu5lpFFyaIN7--1--hcvg6.jpg</IMAGE>
+            // met une vraie recette de Crêpes
+            <QUANTITE>4</QUANTITE>            <!-- en personnes -->
+            <DUREE>30</DUREE>            <!-- en minutes -->
+            <CUISSON>20</CUISSON>            <!-- en minutes -->
+            <PRIX>3</PRIX>            <!-- en euros -->
+            <SANTE>                <!-- en % des AJR -->
+                <PROTEINES>10</PROTEINES>
+                <GLUCIDES>40</GLUCIDES>
+                <LIPIDES>15</LIPIDES>
+                <VITAMINES>25</VITAMINES>
+                <CALCIUM>5</CALCIUM>
+                <FER>10</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I5" quantite="250" unite="U1"/>
+                <INGREDIENT id="I6" quantite="1" unite="U4"/>
+                <INGREDIENT id="I18" quantite="2" unite="U4"/>
+                <INGREDIENT id="I19" quantite="1" unite="U2"/>
+                <INGREDIENT id="I20" quantite="1" unite="U3"/>
+                <INGREDIENT id="I21" quantite="500" unite="U5"/>
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Mélanger la farine, les œufs, le sucre et le sel dans un saladier.</ETAPE>
+                <ETAPE>Ajouter peu à peu le lait en mélangeant énergiquement jusqu'à l'obtention d'une pâte homogène.</ETAPE>
+                <ETAPE>Laisser reposer la pâte pendant 30 minutes.</ETAPE>
+                <ETAPE>Faire chauffer une poêle antiadhésive et y verser une louche de pâte.</ETAPE>
+                <ETAPE>Faire cuire la crêpe des deux côtés jusqu'à ce qu'elle soit dorée.</ETAPE>
+                <ETAPE>Répéter l'opération jusqu'à épuisement de la pâte.</ETAPE>
+                <ETAPE>Servir chaud avec du sucre, du sirop d'érable, de la confiture ou toute autre garniture de votre choix.</ETAPE>
+            </PREPARATION>
+        </RECETTE>
     </RECETTES>
-
     <COMMANDES>
         <COMMANDE id="C1">
             <RECETTEID>R1</RECETTEID>
@@ -211,6 +245,27 @@
             <CLIENTID>P2</CLIENTID>
             <LIVREURID>L1</LIVREURID>
         </COMMANDE>
+        <COMMANDE id="C4">
+            <RECETTEID>R1</RECETTEID>
+            <QUANTITE>5</QUANTITE>
+            <DATE>10/03/2024</DATE>
+            <CLIENTID>P1</CLIENTID>
+            <LIVREURID>L2</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C5">
+            <RECETTEID>R1</RECETTEID>
+            <QUANTITE>3</QUANTITE>
+            <DATE>15/03/2024</DATE>
+            <CLIENTID>P2</CLIENTID>
+            <LIVREURID>L1</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C6">
+            <RECETTEID>R3</RECETTEID>
+            <QUANTITE>4</QUANTITE>
+            <DATE>20/03/2024</DATE>
+            <CLIENTID>P1</CLIENTID>
+            <LIVREURID>L2</LIVREURID>
+        </COMMANDE>
     </COMMANDES>
 
     <COMMENTAIRES>
@@ -231,6 +286,27 @@
         <COMMENTAIRE id="M3">
             <COMMANDEID>C3</COMMANDEID>
             <DATE>09/03/2024</DATE>
+            <TITRE>Très bon</TITRE>
+            <TEXTE>Excellente salade de riz, je recommande vraiment</TEXTE>
+            <NOTE>4</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M4">
+            <COMMANDEID>C4</COMMANDEID>
+            <DATE>11/03/2024</DATE>
+            <TITRE>Excellent</TITRE>
+            <TEXTE>Très bonne salade de fruit, je recommande !!</TEXTE>
+            <NOTE>5</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M5">
+            <COMMANDEID>C5</COMMANDEID>
+            <DATE>16/03/2024</DATE>
+            <TITRE>Excellent</TITRE>
+            <TEXTE>Très bonne salade de fruit, je recommande !!</TEXTE>
+            <NOTE>5</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M6">
+            <COMMANDEID>C6</COMMANDEID>
+            <DATE>21/03/2024</DATE>
             <TITRE>Très bon</TITRE>
             <TEXTE>Excellente salade de riz, je recommande vraiment</TEXTE>
             <NOTE>4</NOTE>
@@ -319,6 +395,18 @@
         <PRODUIT id="I17">
             <NOM>thon</NOM>
         </PRODUIT>
+        <PRODUIT id="I18">
+            <NOM>farine</NOM>
+        </PRODUIT>
+        <PRODUIT id="I19">
+            <NOM>sucre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I20">
+            <NOM>sel</NOM>
+        </PRODUIT>
+        <PRODUIT id="I21">
+            <NOM>lait</NOM>
+        </PRODUIT>
     </PRODUITS>
 
     <UNITES>
@@ -326,5 +414,8 @@
         <UNITE id="U2" short_name="càs">cuillères à soupe</UNITE>
         <UNITE id="U3" short_name="pincée">pincée</UNITE>
         <UNITE id="U4" short_name="">unité</UNITE>
+        <UNITE id="U5" short_name="ml">millilitres</UNITE>
+        <UNITE id="U6" short_name="L">litres</UNITE>
     </UNITES>
+
 </ROOT>
