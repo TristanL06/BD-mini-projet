@@ -8,3 +8,9 @@ Imaginez 3 scénarios nécessitant la visualisation d'une partie de ces données
 ### Scénario 2 : Afficher la liste des commandes avec les détails des clients et des livreurs
 
 ### Scénario 3 : Afficher la liste des commentaires associés aux commandes
+
+### Scénario 4 : Afficher la liste des recettes avec la moyenne des notes des clients
+
+### Scénario 5 : Afficher la liste des recettes en JSON
+
+### Scénario 6 : Implémenter un programme Python pour obtenir les recettes que l'on peut faire avec les ingrédients que l'on a dans le frigo

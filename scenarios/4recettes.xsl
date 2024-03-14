@@ -5,7 +5,9 @@
     <xsl:template match="/">
         <output>
             <recettes>
-                <xsl:apply-templates select="//RECETTE"/>
+                <xsl:apply-templates select="//RECETTE">
+                    <xsl:sort select="moyenne"/>
+                </xsl:apply-templates>
             </recettes>
         </output>
     </xsl:template>
@@ -19,15 +21,6 @@
                 <xsl:value-of select="NOM"/>
             </nom>
             <xsl:variable name="related_comments" select="//COMMENTAIRE[COMMANDEID=//COMMANDE[RECETTEID=current()/@id]/@id]"/>
-            <!--
-            <notes>
-                <xsl:for-each select="$related_comments">
-                    <note>
-                        <xsl:value-of select="NOTE"/>
-                    </note>
-                </xsl:for-each>
-            </notes>
-            -->
             <moyenne>
                 <xsl:value-of select="sum($related_comments/NOTE) div count($related_comments)"/>
             </moyenne>

@@ -1,0 +1,507 @@
+{
+    "RECETTES": [
+        {
+            "NOM": "Salade de fruits",
+            "IMAGE": "https://images.nightcafe.studio/jobs/bDmUDPx9d8Xj4gFDKOKt/bDmUDPx9d8Xj4gFDKOKt--1--zeuai.jpg",
+            "QUANTITE": "5",
+            "DUREE": "10",
+            "CUISSON": "0",
+            "PRIX": "10",
+            "SANTE": {
+                "PROTEINES": "5",
+                "GLUCIDES": "20",
+                "LIPIDES": "5",
+                "VITAMINES": "50",
+                "CALCIUM": "10",
+                "FER": "10"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "banane",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "pomme",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "orange",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "kiwi",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "sucre",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "citron",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                }
+            ],
+            "PREPARATION": [
+                "Couper les fruits en morceaux",
+                "Ajouter le sucre",
+                "Presser le citron",
+                "Mélanger"
+            ]
+        },
+        {
+            "NOM": "Salade de pâtes",
+            "IMAGE": "https://images.nightcafe.studio/jobs/UgzKuBalM9oV980yrx8h/UgzKuBalM9oV980yrx8h--1--ao8zf.jpg",
+            "QUANTITE": "3",
+            "DUREE": "15",
+            "CUISSON": "10",
+            "PRIX": "7",
+            "SANTE": {
+                "PROTEINES": "15",
+                "GLUCIDES": "25",
+                "LIPIDES": "10",
+                "VITAMINES": "30",
+                "CALCIUM": "10",
+                "FER": "15"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "pâtes",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "tomates",
+                    "quantite": "2",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "concombre",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "poivron",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "oignon",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "huile d'olive",
+                    "quantite": "1",
+                    "unite": "cuillères à soupe",
+                    "unite_short_name": "càs"
+                },
+                {
+                    "nom": "vinaigre",
+                    "quantite": "1",
+                    "unite": "cuillères à soupe",
+                    "unite_short_name": "càs"
+                },
+                {
+                    "nom": "sel",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "poivre",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                }
+            ],
+            "PREPARATION": [
+                "Cuire les pâtes",
+                "Couper les légumes en petits morceaux",
+                "Mélanger les pâtes et les légumes",
+                "Ajouter l'huile d'olive, le vinaigre, le sel et le poivre"
+            ]
+        },
+        {
+            "NOM": "Salade de riz",
+            "IMAGE": "https://images.nightcafe.studio/jobs/2VDr8uqBPnWNmOB3yyEZ/2VDr8uqBPnWNmOB3yyEZ--1--mjjig.jpg",
+            "QUANTITE": "4",
+            "DUREE": "20",
+            "CUISSON": "10",
+            "PRIX": "5",
+            "SANTE": {
+                "PROTEINES": "20",
+                "GLUCIDES": "30",
+                "LIPIDES": "10",
+                "VITAMINES": "40",
+                "CALCIUM": "15",
+                "FER": "20"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "pâtes",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "riz",
+                    "quantite": "2",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "thon",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "farine",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "lait",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "haricots blancs",
+                    "quantite": "1",
+                    "unite": "cuillères à soupe",
+                    "unite_short_name": "càs"
+                },
+                {
+                    "nom": "cuisses de canard confites",
+                    "quantite": "1",
+                    "unite": "cuillères à soupe",
+                    "unite_short_name": "càs"
+                },
+                {
+                    "nom": "sel",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "poivre",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                }
+            ],
+            "PREPARATION": [
+                "Cuire le riz",
+                "Couper les légumes en petits morceaux",
+                "Mélanger le riz et les légumes",
+                "Ajouter le thon, l'huile d'olive, le vinaigre, le sel et le poivre"
+            ]
+        },
+        {
+            "NOM": "Crêpes",
+            "IMAGE": "https://images.nightcafe.studio/jobs/fvKkYQsBzu5lpFFyaIN7/fvKkYQsBzu5lpFFyaIN7--1--hcvg6.jpg",
+            "QUANTITE": "4",
+            "DUREE": "30",
+            "CUISSON": "20",
+            "PRIX": "3",
+            "SANTE": {
+                "PROTEINES": "10",
+                "GLUCIDES": "40",
+                "LIPIDES": "15",
+                "VITAMINES": "25",
+                "CALCIUM": "5",
+                "FER": "10"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "farine",
+                    "quantite": "300",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "oeufs",
+                    "quantite": "3",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "sucre",
+                    "quantite": "3",
+                    "unite": "cuillères à soupe",
+                    "unite_short_name": "càs"
+                },
+                {
+                    "nom": "lait",
+                    "quantite": "600",
+                    "unite": "millilitres",
+                    "unite_short_name": "ml"
+                },
+                {
+                    "nom": "beurre",
+                    "quantite": "50",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                }
+            ],
+            "PREPARATION": [
+                "Mélanger la farine, les œufs et le sucre dans un saladier.",
+                "Ajouter peu à peu le lait en mélangeant énergiquement jusqu'à l'obtention d'une pâte homogène.",
+                "Laisser reposer la pâte pendant 30 minutes.",
+                "Faire chauffer une poêle antiadhésive et y verser une louche de pâte.",
+                "Faire cuire la crêpe des deux côtés jusqu'à ce qu'elle soit dorée.",
+                "Répéter l'opération jusqu'à épuisement de la pâte.",
+                "Servir chaud avec du sucre, du sirop d'érable, de la confiture ou toute autre garniture de votre choix."
+            ]
+        },
+        {
+            "NOM": "Cassoulet",
+            "IMAGE": "https://images.nightcafe.studio/jobs/i4eCQGj4ws9zRGPIR22l/i4eCQGj4ws9zRGPIR22l--1--5zdn6.jpg",
+            "QUANTITE": "6",
+            "DUREE": "180",
+            "CUISSON": "120",
+            "PRIX": "15",
+            "SANTE": {
+                "PROTEINES": "35",
+                "GLUCIDES": "25",
+                "LIPIDES": "30",
+                "VITAMINES": "20",
+                "CALCIUM": "15",
+                "FER": "20"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "jarret de porc",
+                    "quantite": "500",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "lard",
+                    "quantite": "6",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "saucisse de toulouse",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "ail",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "clous de girofle",
+                    "quantite": "4",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "bouquet garni",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "saucisses de strasbourg",
+                    "quantite": "2",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "sel",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "poivre",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "escargots",
+                    "quantite": "6",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                }
+            ],
+            "PREPARATION": [
+                "Faire tremper les haricots blancs dans de l'eau froide pendant 12 heures.",
+                "Préchauffer le four à 150°C (thermostat 5).",
+                "Égoutter les haricots blancs et les mettre dans une cocotte en fonte.",
+                "Ajouter les cuisses de canard confites, le jarret de porc, le lard, la saucisse de Toulouse, l'oignon piqué de clous de girofle, l'ail, le bouquet garni, le sel et le poivre.",
+                "Couvrir d'eau froide à hauteur.",
+                "Cuire au four pendant 2 heures.",
+                "Ajouter les saucisses de Strasbourg et poursuivre la cuisson pendant 1 heure.",
+                "Retirer l'oignon et le bouquet garni.",
+                "Augmenter la température à 200°C (thermostat 6/7) et laisser gratiner pendant 30 minutes.",
+                "Servir chaud dans des assiettes creuses."
+            ]
+        },
+        {
+            "NOM": "Escargots à l'ail",
+            "IMAGE": "https://images.nightcafe.studio/jobs/JzJUstAiiY9Z30WjZTAn/JzJUstAiiY9Z30WjZTAn--1--cmf0d.jpg",
+            "QUANTITE": "4",
+            "DUREE": "60",
+            "CUISSON": "20",
+            "PRIX": "10",
+            "SANTE": {
+                "PROTEINES": "15",
+                "GLUCIDES": "10",
+                "LIPIDES": "20",
+                "VITAMINES": "30",
+                "CALCIUM": "5",
+                "FER": "10"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "escargots",
+                    "quantite": "24",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "beurre",
+                    "quantite": "120",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "ail",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "persil",
+                    "quantite": "1",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "sel",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "poivre",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                }
+            ],
+            "PREPARATION": [
+                "Préchauffer le four à 180°C (thermostat 6).",
+                "Dans un bol, mélanger le beurre ramolli, l'ail haché, le persil haché, le sel et le poivre.",
+                "Disposer les escargots dans des moules à escargots.",
+                "Recouvrir chaque escargot avec une cuillère à café du mélange de beurre à l'ail.",
+                "Enfourner pendant 15 à 20 minutes, jusqu'à ce que le beurre soit fondu et que les escargots soient chauds.",
+                "Servir chaud avec du pain frais."
+            ]
+        },
+        {
+            "NOM": "Gratin Dauphinois",
+            "IMAGE": "https://images.nightcafe.studio/jobs/H9DwNpGakZWae45E641V/H9DwNpGakZWae45E641V--1--qzlrd.jpg",
+            "QUANTITE": "6",
+            "DUREE": "90",
+            "CUISSON": "60",
+            "PRIX": "8",
+            "SANTE": {
+                "PROTEINES": "10",
+                "GLUCIDES": "20",
+                "LIPIDES": "15",
+                "VITAMINES": "10",
+                "CALCIUM": "10",
+                "FER": "5"
+            },
+            "INGREDIENTS": [
+                {
+                    "nom": "pommes de terre",
+                    "quantite": "1000",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "beurre",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "ail",
+                    "quantite": "2",
+                    "unite": "unité",
+                    "unite_short_name": ""
+                },
+                {
+                    "nom": "sel",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "poivre",
+                    "quantite": "1",
+                    "unite": "pincée",
+                    "unite_short_name": "pincée"
+                },
+                {
+                    "nom": "crème fraîche",
+                    "quantite": "200",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "fromage râpé",
+                    "quantite": "75",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                },
+                {
+                    "nom": "noix de muscade",
+                    "quantite": "20",
+                    "unite": "grammes",
+                    "unite_short_name": "g"
+                }
+            ],
+            "PREPARATION": [
+                "Préchauffer le four à 180°C (thermostat 6).",
+                "Éplucher et couper les pommes de terre en fines tranches.",
+                "Frotter un plat à gratin avec une gousse d'ail.",
+                "Dans une casserole, faire chauffer la crème, le lait, l'ail écrasé, le sel, le poivre et la noix de muscade.",
+                "Déposer une couche de pommes de terre dans le plat à gratin.",
+                "Arroser avec une partie du mélange crème-lait.",
+                "Répéter les couches de pommes de terre et de crème-lait jusqu'à épuisement des ingrédients.",
+                "Parsemer de fromage râpé et de noisettes de beurre.",
+                "Enfourner pendant environ 60 minutes, jusqu'à ce que le gratin soit doré et les pommes de terre tendres.",
+                "Servir chaud."
+            ]
+        }
+    ]
+}

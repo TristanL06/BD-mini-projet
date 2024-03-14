@@ -100,12 +100,18 @@
                 <FER>10</FER>
             </SANTE>
             <INGREDIENTS>
-                <INGREDIENT id="I1" quantite="2" unite="U4"/>
-                <INGREDIENT id="I2" quantite="2" unite="U4"/>
-                <INGREDIENT id="I3" quantite="2" unite="U4"/>
-                <INGREDIENT id="I4" quantite="2" unite="U4"/>
-                <INGREDIENT id="I5" quantite="1" unite="U2"/>
-                <INGREDIENT id="I6" quantite="1" unite="U4"/>
+                <INGREDIENT id="I1" quantite="200" unite="U1"/>
+                <!-- banane -->
+                <INGREDIENT id="I2" quantite="200" unite="U1"/>
+                <!-- pomme -->
+                <INGREDIENT id="I3" quantite="200" unite="U1"/>
+                <!-- orange -->
+                <INGREDIENT id="I4" quantite="200" unite="U1"/>
+                <!-- raisin -->
+                <INGREDIENT id="I5" quantite="200" unite="U1"/>
+                <!-- kiwi -->
+                <INGREDIENT id="I6" quantite="200" unite="U1"/>
+                <!-- fraise -->
             </INGREDIENTS>
             <PREPARATION>
                 <ETAPE>Couper les fruits en morceaux</ETAPE>
@@ -131,14 +137,23 @@
             </SANTE>
             <INGREDIENTS>
                 <INGREDIENT id="I7" quantite="200" unite="U1"/>
+                <!-- pâtes -->
                 <INGREDIENT id="I8" quantite="2" unite="U4"/>
+                <!-- tomates -->
                 <INGREDIENT id="I9" quantite="1" unite="U4"/>
+                <!-- concombre -->
                 <INGREDIENT id="I10" quantite="1" unite="U4"/>
+                <!-- poivron -->
                 <INGREDIENT id="I11" quantite="1" unite="U4"/>
+                <!-- oignon -->
                 <INGREDIENT id="I12" quantite="1" unite="U2"/>
+                <!-- huile d'olive -->
                 <INGREDIENT id="I13" quantite="1" unite="U2"/>
+                <!-- vinaigre -->
                 <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <!-- sel -->
                 <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <!-- poivre -->
             </INGREDIENTS>
             <PREPARATION>
                 <ETAPE>Cuire les pâtes</ETAPE>
@@ -163,16 +178,24 @@
                 <FER>20</FER>
             </SANTE>
             <INGREDIENTS>
-                <INGREDIENT id="I16" quantite="200" unite="U1"/>
-                <INGREDIENT id="I8" quantite="2" unite="U4"/>
-                <INGREDIENT id="I9" quantite="1" unite="U4"/>
-                <INGREDIENT id="I10" quantite="1" unite="U4"/>
-                <INGREDIENT id="I11" quantite="1" unite="U4"/>
-                <INGREDIENT id="I12" quantite="1" unite="U2"/>
-                <INGREDIENT id="I13" quantite="1" unite="U2"/>
-                <INGREDIENT id="I14" quantite="1" unite="U3"/>
-                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <INGREDIENT id="I7" quantite="200" unite="U1"/>
+                <!-- riz -->
+                <INGREDIENT id="I16" quantite="2" unite="U4"/>
+                <!-- tomates -->
                 <INGREDIENT id="I17" quantite="1" unite="U4"/>
+                <!-- concombre -->
+                <INGREDIENT id="I18" quantite="1" unite="U4"/>
+                <!-- poivron -->
+                <INGREDIENT id="I19" quantite="1" unite="U4"/>
+                <!-- oignon -->
+                <INGREDIENT id="I20" quantite="1" unite="U2"/>
+                <!-- huile d'olive -->
+                <INGREDIENT id="I21" quantite="1" unite="U2"/>
+                <!-- vinaigre -->
+                <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <!-- sel -->
+                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <!-- poivre -->
             </INGREDIENTS>
             <PREPARATION>
                 <ETAPE>Cuire le riz</ETAPE>
@@ -184,7 +207,6 @@
         <RECETTE id="R4">
             <NOM>Crêpes</NOM>
             <IMAGE>https://images.nightcafe.studio/jobs/fvKkYQsBzu5lpFFyaIN7/fvKkYQsBzu5lpFFyaIN7--1--hcvg6.jpg</IMAGE>
-            // met une vraie recette de Crêpes
             <QUANTITE>4</QUANTITE>            <!-- en personnes -->
             <DUREE>30</DUREE>            <!-- en minutes -->
             <CUISSON>20</CUISSON>            <!-- en minutes -->
@@ -198,21 +220,159 @@
                 <FER>10</FER>
             </SANTE>
             <INGREDIENTS>
-                <INGREDIENT id="I5" quantite="250" unite="U1"/>
-                <INGREDIENT id="I6" quantite="1" unite="U4"/>
-                <INGREDIENT id="I18" quantite="2" unite="U4"/>
-                <INGREDIENT id="I19" quantite="1" unite="U2"/>
-                <INGREDIENT id="I20" quantite="1" unite="U3"/>
-                <INGREDIENT id="I21" quantite="500" unite="U5"/>
+                <INGREDIENT id="I18" quantite="300" unite="U1"/>
+                <!-- Farine -->
+                <INGREDIENT id="I37" quantite="3" unite="U4"/>
+                <!-- Oeufs -->
+                <INGREDIENT id="I5" quantite="3" unite="U2"/>
+                <!-- Sucre -->
+                <INGREDIENT id="I19" quantite="600" unite="U5"/>
+                <!-- Lait -->
+                <INGREDIENT id="I30" quantite="50" unite="U1"/>
+                <!-- Beurre -->
             </INGREDIENTS>
             <PREPARATION>
-                <ETAPE>Mélanger la farine, les œufs, le sucre et le sel dans un saladier.</ETAPE>
+                <ETAPE>Mélanger la farine, les œufs et le sucre dans un saladier.</ETAPE>
                 <ETAPE>Ajouter peu à peu le lait en mélangeant énergiquement jusqu'à l'obtention d'une pâte homogène.</ETAPE>
                 <ETAPE>Laisser reposer la pâte pendant 30 minutes.</ETAPE>
                 <ETAPE>Faire chauffer une poêle antiadhésive et y verser une louche de pâte.</ETAPE>
                 <ETAPE>Faire cuire la crêpe des deux côtés jusqu'à ce qu'elle soit dorée.</ETAPE>
                 <ETAPE>Répéter l'opération jusqu'à épuisement de la pâte.</ETAPE>
                 <ETAPE>Servir chaud avec du sucre, du sirop d'érable, de la confiture ou toute autre garniture de votre choix.</ETAPE>
+            </PREPARATION>
+        </RECETTE>
+        <RECETTE id="R5">
+            <NOM>Cassoulet</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/i4eCQGj4ws9zRGPIR22l/i4eCQGj4ws9zRGPIR22l--1--5zdn6.jpg</IMAGE>
+            <QUANTITE>6</QUANTITE>            <!-- en personnes -->
+            <DUREE>180</DUREE>            <!-- en minutes -->
+            <CUISSON>120</CUISSON>            <!-- en minutes -->
+            <PRIX>15</PRIX>            <!-- en euros -->
+            <SANTE>                <!-- en % des AJR -->
+                <PROTEINES>35</PROTEINES>
+                <GLUCIDES>25</GLUCIDES>
+                <LIPIDES>30</LIPIDES>
+                <VITAMINES>20</VITAMINES>
+                <CALCIUM>15</CALCIUM>
+                <FER>20</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I22" quantite="500" unite="U1"/>
+                <!-- Haricots blancs -->
+                <INGREDIENT id="I23" quantite="6" unite="U4"/>
+                <!-- Cuisses de canard confites -->
+                <INGREDIENT id="I24" quantite="1" unite="U4"/>
+                <!-- Jarret de porc -->
+                <INGREDIENT id="I25" quantite="200" unite="U1"/>
+                <!-- Lard -->
+                <INGREDIENT id="I26" quantite="4" unite="U4"/>
+                <!-- Saucisse de Toulouse -->
+                <INGREDIENT id="I27" quantite="1" unite="U4"/>
+                <!-- Oignon -->
+                <INGREDIENT id="I28" quantite="2" unite="U4"/>
+                <!-- Clous de girofle -->
+                <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <!-- Sel -->
+                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <!-- Poivre -->
+                <INGREDIENT id="I29" quantite="6" unite="U4"/>
+                <!-- Saucisses de Strasbourg -->
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Faire tremper les haricots blancs dans de l'eau froide pendant 12 heures.</ETAPE>
+                <ETAPE>Préchauffer le four à 150°C (thermostat 5).</ETAPE>
+                <ETAPE>Égoutter les haricots blancs et les mettre dans une cocotte en fonte.</ETAPE>
+                <ETAPE>Ajouter les cuisses de canard confites, le jarret de porc, le lard, la saucisse de Toulouse, l'oignon piqué de clous de girofle, l'ail, le bouquet garni, le sel et le poivre.</ETAPE>
+                <ETAPE>Couvrir d'eau froide à hauteur.</ETAPE>
+                <ETAPE>Cuire au four pendant 2 heures.</ETAPE>
+                <ETAPE>Ajouter les saucisses de Strasbourg et poursuivre la cuisson pendant 1 heure.</ETAPE>
+                <ETAPE>Retirer l'oignon et le bouquet garni.</ETAPE>
+                <ETAPE>Augmenter la température à 200°C (thermostat 6/7) et laisser gratiner pendant 30 minutes.</ETAPE>
+                <ETAPE>Servir chaud dans des assiettes creuses.</ETAPE>
+            </PREPARATION>
+        </RECETTE>
+        <RECETTE id="R6">
+            <NOM>Escargots à l'ail</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/JzJUstAiiY9Z30WjZTAn/JzJUstAiiY9Z30WjZTAn--1--cmf0d.jpg</IMAGE>
+            <QUANTITE>4</QUANTITE>            <!-- en personnes -->
+            <DUREE>60</DUREE>            <!-- en minutes -->
+            <CUISSON>20</CUISSON>            <!-- en minutes -->
+            <PRIX>10</PRIX>            <!-- en euros -->
+            <SANTE>                <!-- en % des AJR -->
+                <PROTEINES>15</PROTEINES>
+                <GLUCIDES>10</GLUCIDES>
+                <LIPIDES>20</LIPIDES>
+                <VITAMINES>30</VITAMINES>
+                <CALCIUM>5</CALCIUM>
+                <FER>10</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I29" quantite="24" unite="U4"/>
+                <!-- Escargots -->
+                <INGREDIENT id="I30" quantite="120" unite="U1"/>
+                <!-- Beurre -->
+                <INGREDIENT id="I25" quantite="1" unite="U4"/>
+                <!-- Gousses d'ail -->
+                <INGREDIENT id="I32" quantite="1" unite="U4"/>
+                <!-- Persil -->
+                <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <!-- Sel -->
+                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <!-- Poivre -->
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Préchauffer le four à 180°C (thermostat 6).</ETAPE>
+                <ETAPE>Dans un bol, mélanger le beurre ramolli, l'ail haché, le persil haché, le sel et le poivre.</ETAPE>
+                <ETAPE>Disposer les escargots dans des moules à escargots.</ETAPE>
+                <ETAPE>Recouvrir chaque escargot avec une cuillère à café du mélange de beurre à l'ail.</ETAPE>
+                <ETAPE>Enfourner pendant 15 à 20 minutes, jusqu'à ce que le beurre soit fondu et que les escargots soient chauds.</ETAPE>
+                <ETAPE>Servir chaud avec du pain frais.</ETAPE>
+            </PREPARATION>
+        </RECETTE>
+        <RECETTE id="R7">
+            <NOM>Gratin Dauphinois</NOM>
+            <IMAGE>https://images.nightcafe.studio/jobs/H9DwNpGakZWae45E641V/H9DwNpGakZWae45E641V--1--qzlrd.jpg</IMAGE>
+            <QUANTITE>6</QUANTITE>            <!-- en personnes -->
+            <DUREE>90</DUREE>            <!-- en minutes -->
+            <CUISSON>60</CUISSON>            <!-- en minutes -->
+            <PRIX>8</PRIX>            <!-- en euros -->
+            <SANTE>                <!-- en % des AJR -->
+                <PROTEINES>10</PROTEINES>
+                <GLUCIDES>20</GLUCIDES>
+                <LIPIDES>15</LIPIDES>
+                <VITAMINES>10</VITAMINES>
+                <CALCIUM>10</CALCIUM>
+                <FER>5</FER>
+            </SANTE>
+            <INGREDIENTS>
+                <INGREDIENT id="I33" quantite="1000" unite="U1"/>
+                <!-- Pommes de terre -->
+                <INGREDIENT id="I30" quantite="200" unite="U1"/>
+                <!-- Beurre -->
+                <INGREDIENT id="I25" quantite="2" unite="U4"/>
+                <!-- Gousses d'ail -->
+                <INGREDIENT id="I14" quantite="1" unite="U3"/>
+                <!-- Sel -->
+                <INGREDIENT id="I15" quantite="1" unite="U3"/>
+                <!-- Poivre -->
+                <INGREDIENT id="I34" quantite="200" unite="U1"/>
+                <!-- Crème fraîche -->
+                <INGREDIENT id="I35" quantite="75" unite="U1"/>
+                <!-- Fromage râpé -->
+                <INGREDIENT id="I36" quantite="20" unite="U1"/>
+                <!-- Noix de muscade -->
+            </INGREDIENTS>
+            <PREPARATION>
+                <ETAPE>Préchauffer le four à 180°C (thermostat 6).</ETAPE>
+                <ETAPE>Éplucher et couper les pommes de terre en fines tranches.</ETAPE>
+                <ETAPE>Frotter un plat à gratin avec une gousse d'ail.</ETAPE>
+                <ETAPE>Dans une casserole, faire chauffer la crème, le lait, l'ail écrasé, le sel, le poivre et la noix de muscade.</ETAPE>
+                <ETAPE>Déposer une couche de pommes de terre dans le plat à gratin.</ETAPE>
+                <ETAPE>Arroser avec une partie du mélange crème-lait.</ETAPE>
+                <ETAPE>Répéter les couches de pommes de terre et de crème-lait jusqu'à épuisement des ingrédients.</ETAPE>
+                <ETAPE>Parsemer de fromage râpé et de noisettes de beurre.</ETAPE>
+                <ETAPE>Enfourner pendant environ 60 minutes, jusqu'à ce que le gratin soit doré et les pommes de terre tendres.</ETAPE>
+                <ETAPE>Servir chaud.</ETAPE>
             </PREPARATION>
         </RECETTE>
     </RECETTES>
@@ -257,7 +417,7 @@
             <QUANTITE>3</QUANTITE>
             <DATE>15/03/2024</DATE>
             <CLIENTID>P2</CLIENTID>
-            <LIVREURID>L1</LIVREURID>
+            <LIVREURID>L3</LIVREURID>
         </COMMANDE>
         <COMMANDE id="C6">
             <RECETTEID>R3</RECETTEID>
@@ -265,6 +425,41 @@
             <DATE>20/03/2024</DATE>
             <CLIENTID>P1</CLIENTID>
             <LIVREURID>L2</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C7">
+            <RECETTEID>R2</RECETTEID>
+            <QUANTITE>3</QUANTITE>
+            <DATE>25/03/2024</DATE>
+            <CLIENTID>P2</CLIENTID>
+            <LIVREURID>L1</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C8">
+            <RECETTEID>R3</RECETTEID>
+            <QUANTITE>3</QUANTITE>
+            <DATE>30/03/2024</DATE>
+            <CLIENTID>P4</CLIENTID>
+            <LIVREURID>L2</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C9">
+            <RECETTEID>R1</RECETTEID>
+            <QUANTITE>5</QUANTITE>
+            <DATE>01/04/2024</DATE>
+            <CLIENTID>P1</CLIENTID>
+            <LIVREURID>L3</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C10">
+            <RECETTEID>R6</RECETTEID>
+            <QUANTITE>3</QUANTITE>
+            <DATE>05/04/2024</DATE>
+            <CLIENTID>P2</CLIENTID>
+            <LIVREURID>L1</LIVREURID>
+        </COMMANDE>
+        <COMMANDE id="C11">
+            <RECETTEID>R7</RECETTEID>
+            <QUANTITE>4</QUANTITE>
+            <DATE>08/04/2024</DATE>
+            <CLIENTID>P2</CLIENTID>
+            <LIVREURID>L1</LIVREURID>
         </COMMANDE>
     </COMMANDES>
 
@@ -311,16 +506,55 @@
             <TEXTE>Excellente salade de riz, je recommande vraiment</TEXTE>
             <NOTE>4</NOTE>
         </COMMENTAIRE>
+        <COMMENTAIRE id="M7">
+            <COMMANDEID>C7</COMMANDEID>
+            <DATE>26/03/2024</DATE>
+            <TITRE>Correcte sans plus</TITRE>
+            <TEXTE>Salade de pâtes correcte, pas de quoi en faire tout un plat</TEXTE>
+            <NOTE>3</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M8">
+            <COMMANDEID>C8</COMMANDEID>
+            <DATE>31/03/2024</DATE>
+            <TITRE>Immonde</TITRE>
+            <TEXTE>Salade de riz infecte, comment le cuisinier peut encore être en liberté ?</TEXTE>
+            <NOTE>1</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M9">
+            <COMMANDEID>C9</COMMANDEID>
+            <DATE>02/04/2024</DATE>
+            <TITRE>Et la saison ?</TITRE>
+            <TEXTE>Salade de fruit en avril, c'est pas la saison, c'est pas bon</TEXTE>
+            <NOTE>2</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M10">
+            <COMMANDEID>C10</COMMANDEID>
+            <DATE>06/04/2024</DATE>
+            <TITRE>Excellent</TITRE>
+            <TEXTE>Très bon escargots à l'ail, je recommande !!</TEXTE>
+            <NOTE>5</NOTE>
+        </COMMENTAIRE>
+        <COMMENTAIRE id="M11">
+            <COMMANDEID>C11</COMMANDEID>
+            <DATE>09/04/2024</DATE>
+            <TITRE>Excellent</TITRE>
+            <TEXTE>Très bon gratin dauphinois, je recommande !!</TEXTE>
+            <NOTE>5</NOTE>
+        </COMMENTAIRE>
     </COMMENTAIRES>
 
     <LIVREURS>
         <LIVREUR id="L1">
-            <NOM>Dupont</NOM>
+            <NOM>Dupond</NOM>
             <PRENOM>Paul</PRENOM>
         </LIVREUR>
         <LIVREUR id="L2">
             <NOM>Durand</NOM>
             <PRENOM>Marie</PRENOM>
+        </LIVREUR>
+        <LIVREUR id="L3">
+            <NOM>Poutier</NOM>
+            <PRENOM>Marcelino</PRENOM>
         </LIVREUR>
     </LIVREURS>
 
@@ -340,6 +574,22 @@
             <VILLE>Biot</VILLE>
             <CODEPOSTAL>06410</CODEPOSTAL>
             <TELEPHONE>0721548261</TELEPHONE>
+        </CLIENT>
+        <CLIENT id="P3">
+            <NOM>DACHACK</NOM>
+            <PRENOM>André</PRENOM>
+            <ADRESSE>8888 chemin du point</ADRESSE>
+            <VILLE>Biot</VILLE>
+            <CODEPOSTAL>06410</CODEPOSTAL>
+            <TELEPHONE>0632147852</TELEPHONE>
+        </CLIENT>
+        <CLIENT id="P4">
+            <NOM>DEGROOTE</NOM>
+            <PRENOM>Anastasia</PRENOM>
+            <ADRESSE>Impasse du primeur</ADRESSE>
+            <VILLE>Valbonne</VILLE>
+            <CODEPOSTAL>06560</CODEPOSTAL>
+            <TELEPHONE>0698745123</TELEPHONE>
         </CLIENT>
     </CLIENTS>
 
@@ -399,13 +649,61 @@
             <NOM>farine</NOM>
         </PRODUIT>
         <PRODUIT id="I19">
-            <NOM>sucre</NOM>
+            <NOM>lait</NOM>
         </PRODUIT>
         <PRODUIT id="I20">
-            <NOM>sel</NOM>
+            <NOM>haricots blancs</NOM>
         </PRODUIT>
         <PRODUIT id="I21">
-            <NOM>lait</NOM>
+            <NOM>cuisses de canard confites</NOM>
+        </PRODUIT>
+        <PRODUIT id="I22">
+            <NOM>jarret de porc</NOM>
+        </PRODUIT>
+        <PRODUIT id="I23">
+            <NOM>lard</NOM>
+        </PRODUIT>
+        <PRODUIT id="I24">
+            <NOM>saucisse de toulouse</NOM>
+        </PRODUIT>
+        <PRODUIT id="I25">
+            <NOM>ail</NOM>
+        </PRODUIT>
+        <PRODUIT id="I26">
+            <NOM>clous de girofle</NOM>
+        </PRODUIT>
+        <PRODUIT id="I27">
+            <NOM>bouquet garni</NOM>
+        </PRODUIT>
+        <PRODUIT id="I28">
+            <NOM>saucisses de strasbourg</NOM>
+        </PRODUIT>
+        <PRODUIT id="I29">
+            <NOM>escargots</NOM>
+        </PRODUIT>
+        <PRODUIT id="I30">
+            <NOM>beurre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I31">
+            <NOM>gousses d'ail</NOM>
+        </PRODUIT>
+        <PRODUIT id="I32">
+            <NOM>persil</NOM>
+        </PRODUIT>
+        <PRODUIT id="I33">
+            <NOM>pommes de terre</NOM>
+        </PRODUIT>
+        <PRODUIT id="I34">
+            <NOM>crème fraîche</NOM>
+        </PRODUIT>
+        <PRODUIT id="I35">
+            <NOM>fromage râpé</NOM>
+        </PRODUIT>
+        <PRODUIT id="I36">
+            <NOM>noix de muscade</NOM>
+        </PRODUIT>
+        <PRODUIT id="I37">
+            <NOM>oeufs</NOM>
         </PRODUIT>
     </PRODUITS>
 

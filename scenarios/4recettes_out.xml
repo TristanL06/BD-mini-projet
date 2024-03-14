@@ -1,0 +1,32 @@
+<output>
+    <recettes>
+      <recette id="R1">
+        <nom>Salade de fruits</nom>
+        <moyenne>4</moyenne>
+      </recette>
+      <recette id="R2">
+        <nom>Salade de pâtes</nom>
+        <moyenne>4</moyenne>
+      </recette>
+      <recette id="R3">
+        <nom>Salade de riz</nom>
+        <moyenne>3</moyenne>
+      </recette>
+      <recette id="R4">
+        <nom>Crêpes</nom>
+        <moyenne>NaN</moyenne>
+      </recette>
+      <recette id="R5">
+        <nom>Cassoulet</nom>
+        <moyenne>NaN</moyenne>
+      </recette>
+      <recette id="R6">
+        <nom>Escargots à l'ail</nom>
+        <moyenne>5</moyenne>
+      </recette>
+      <recette id="R7">
+        <nom>Gratin Dauphinois</nom>
+        <moyenne>5</moyenne>
+      </recette>
+    </recettes>
+  </output>

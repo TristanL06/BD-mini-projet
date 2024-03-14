@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>Polytech Nice Sophia 2024&comma; Semestre 8</title>
+            <title>Question</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -141,40 +141,15 @@
             <span id="markdown-mermaid" aria-hidden="true"
                     data-dark-mode-theme="dark"
                     data-light-mode-theme="default"></span>
-                <h1 id="polytech-nice-sophia-2024-semestre-8">Polytech Nice Sophia 2024, Semestre 8</h1>
-<h2 id="eiein830---bases-de-données">EIEIN830 - Bases de données</h2>
-<h1 id="mini-projet">Mini-projet</h1>
-<h2 id="sujet-">Sujet :</h2>
-<p><em><strong>Travail en binôme</strong></em>
-Modélisation d'une base de données XML pour le système d'information d'une entreprise de &quot;boîtes à recettes&quot; (cook/recipe boxes).  Vous pouvez trouver des descriptions de telles sociétés sur leurs sites web (e.g. HelloFresh),  également à partir de la revue du journal BBC Good Food.</p>
-<p>Vous devez envisager la gestion des recettes et des menus proposés, des ingrédients, mais aussi des commandes, des commentaires des clients, des livreurs... La description des recettes et des ingrédients doit intégrer différents aspects : par exemple gastronomie, santé, budget, etc.</p>
-<ul>
-<li>Écrivez un schéma XML qui formalise votre modèle.</li>
-<li>Écrivez un document XML valide par rapport à ce modèle de document, contenant un extrait représentatif des données.</li>
-<li>Imaginez 3 scénarios nécessitant la visualisation d'une partie de ces données XML dans le format textuel de votre choix (e.g. HTML), et écrivez 3 feuilles de style XSLT pour cela (le traitement passe par l'utilisation de templates XSL dans votre feuille de style). Pour une sortie HTML au moins prévoyez une feuille de style CSS et insérez l'instruction de traitement automatiquement via la feuille de style XSLT.</li>
-<li>Imaginez un 4ème scénario nécessitant l'exploitation d'une partie de ces données XML selon une nouvelle structuration en XML et écrivez une feuille de style pour générer automatiquement cette nouvelle base de données XML. Produisez le schéma XML de vos données de sortie.</li>
-<li>Imaginez un 5ème scénario nécessitant l'exploitation d'une partie de ces données XML selon une nouvelle structuration et dans le format JSON et écrivez une feuille de style pour générer automatiquement cette base de données JSON. Produisez le schéma JSON de vos données de sortie.</li>
-<li>Imaginez un 6ème scénario nécessitant l'exploitation d'une partie de ces données XML que vous implémenterez dans un programme Java ou Python.</li>
-<li>Rédigez un court rapport (4 pages max) décrivant vos choix de modélisation et les avantages et inconvénients de votre modélisation, ainsi que vos scénarios et leur implémentation.</li>
-<li>Préparez une présentation powerpoint de votre projet de 10 mn.
-Vous serez évalué en fonction de la qualité et richesse de votre schéma de données (généricité du modèle et finesse des contraintes), de la qualité des scénarios imaginés et de la qualité de vos feuilles de style (ne vous limitez pas à des choses trop simples, préférez un style de programmation XSLT fonctionnel et qui exploite XPath).</li>
-</ul>
-<p>Déposez un zip contenant :</p>
-<p>Votre rapport au format pdf
-Votre présentation powerpoint au format pdf
-Votre fichier XML
-Votre fichier XML Schema
-Vos fichiers XSLT
-Votre code source Java ou Python
-Les fichiers output produits</p>
-<ul>
-<li>Scénario 1 : Visualisation des recettes, avec  les images, informations de santé, ingrédients, et instructions de préparation. Cette pas contient une feuille de style CSS.</li>
-<li>Scénario 2 : Visualisation des commandes en cours, avec les informations sur les clients, les livreurs, les recettes commandées, les dates de livraison, et les détails de commande</li>
-<li>Scénario 3 : Visualisation des commentaires des clients, avec les informations sur les clients, les recettes, les notes, et les commentaires. La note est affichée récursivement avec des petites étoiles</li>
-<li>Scénario 4 : Visualisation des recettes avec la moyenne des notes des clients en plus du scénario 1, les recettes sont triées par la moyenne des notes.</li>
-<li>Scénario 5 : Visualisation des recettes en json avec les informations de santé, ingrédients, et instructions de préparation. Aucun ID n'est affiché, ils sont remplacés par les noms des éléments (ingrédients et unités de mesure)</li>
-<li>Scénario 6 : Implémentation d'un programme Python pour entrer les ingrédients que l'on a dans le frigo et obtenir les recettes que l'on peut faire avec ces ingrédients.</li>
-</ul>
+                <h2 id="question">Question</h2>
+<p>Imaginez 3 scénarios nécessitant la visualisation d'une partie de ces données XML dans le format textuel de votre choix (e.g. HTML), et écrivez 3 feuilles de style XSLT pour cela (le traitement passe par l'utilisation de templates XSL dans votre feuille de style). Pour une sortie HTML au moins prévoyez une feuille de style CSS et insérez l'instruction de traitement automatiquement via la feuille de style XSLT.</p>
+<h2 id="réponse-proposée">Réponse proposée</h2>
+<h3 id="scénario-1--afficher-la-liste-des-recettes-avec-leurs-détails">Scénario 1 : Afficher la liste des recettes avec leurs détails</h3>
+<h3 id="scénario-2--afficher-la-liste-des-commandes-avec-les-détails-des-clients-et-des-livreurs">Scénario 2 : Afficher la liste des commandes avec les détails des clients et des livreurs</h3>
+<h3 id="scénario-3--afficher-la-liste-des-commentaires-associés-aux-commandes">Scénario 3 : Afficher la liste des commentaires associés aux commandes</h3>
+<h3 id="scénario-4--afficher-la-liste-des-recettes-avec-la-moyenne-des-notes-des-clients">Scénario 4 : Afficher la liste des recettes avec la moyenne des notes des clients</h3>
+<h3 id="scénario-5--afficher-la-liste-des-recettes-en-json">Scénario 5 : Afficher la liste des recettes en JSON</h3>
+<h3 id="scénario-6--implémenter-un-programme-python-pour-obtenir-les-recettes-que-lon-peut-faire-avec-les-ingrédients-que-lon-a-dans-le-frigo">Scénario 6 : Implémenter un programme Python pour obtenir les recettes que l'on peut faire avec les ingrédients que l'on a dans le frigo</h3>
 
             
             <script async type="text/javascript">
