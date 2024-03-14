@@ -57,7 +57,7 @@
 
   <xsl:template match="RECETTEID">
     <xsl:variable name="recette" select="../../../RECETTES/RECETTE[@id=current()]"/>
-    <a href="recettes.xml#{$recette/NOM}">
+    <a href="1recettes.xml#{$recette/NOM}">
       <xsl:value-of select="$recette/NOM"/>
     </a>
   </xsl:template>

@@ -5,6 +5,7 @@
     <html>
       <head>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <title>Liste des recettes</title>
       </head>
       <body>
         <h1>Liste des recettes</h1>

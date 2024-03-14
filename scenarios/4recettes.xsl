@@ -24,7 +24,6 @@
             <moyenne>
                 <xsl:value-of select="sum($related_comments/NOTE) div count($related_comments)"/>
             </moyenne>
-            <xsl:value-of select="//COMMENTAIRE[RECETTEID=current()/@id]/NOTE"/>
         </recette>
     </xsl:template>
 </xsl:stylesheet>

@@ -5,6 +5,7 @@
     <html>
       <head>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <title>Liste des avis</title>
       </head>
       <body>
         <h1>Liste des avis</h1>

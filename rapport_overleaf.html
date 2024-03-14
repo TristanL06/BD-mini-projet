@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>Rapport</title>
+            <title></title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -142,89 +142,104 @@
             <span id="markdown-mermaid" aria-hidden="true"
                     data-dark-mode-theme="dark"
                     data-light-mode-theme="default"></span>
-                <h1 id="rapport">Rapport</h1>
-<p><em>Travail réalisé par : Tristan LARGUIER</em></p>
-<h2 id="hypothèses-de-travail">Hypothèses de travail</h2>
-<p>Pour réaliser ce projet, j'ai fait les hypothèses suivantes :</p>
-<ul>
-<li>Les recettes sont des plats uniques, et ne sont pas des menus.</li>
-<li>Les commandes contiennent une seule recette.</li>
-<li>Les commentaires sont liés à une commande, et non à une recette.</li>
-</ul>
-<h2 id="écriture-du-schéma-xml">Écriture du schéma XML</h2>
-<p>Le schéma XML est disponible dans le fichier <code>model.xsd</code>. Il est composé de 7 éléments principaux :</p>
-<ul>
-<li><code>recettes</code> : contient la liste des recettes, avec les informations de santé, les ingrédients, et les instructions de préparation.</li>
-<li><code>commandes</code> : contient la liste des commandes, avec les informations sur les clients, les livreurs, les recettes commandées, les dates de livraison, et les détails de commande.</li>
-<li><code>commentaires</code> : contient la liste des commentaires des clients, avec les informations sur les clients, les recettes, les notes, et les commentaires.</li>
-<li><code>clients</code> : contient la liste des clients, avec les informations sur les clients.</li>
-<li><code>livreurs</code> : contient la liste des livreurs, avec les informations sur les livreurs.</li>
-<li><code>ingredients</code> : contient la liste des ingrédients, avec les informations sur les ingrédients.</li>
-<li><code>unites</code> : contient la liste des unités de mesure, avec les informations sur les unités de mesure.</li>
-</ul>
-<p>Chaque élément est identifié par un attribut <code>id</code> unique, sous forme d'une chaîne de caractères. Le premier caractère de l'<code>id</code> est une lettre, et les caractères suivants sont des chiffres. La lettre permet de distinguer les différents types d'éléments. Les recettes ont un <code>id</code> commençant par <code>R</code>, les commandes par <code>C</code>, les commentaires par <code>M</code>, les clients par <code>P</code>, les livreurs par <code>L</code>, les ingrédients par <code>I</code>, et les unités de mesure par <code>U</code>.</p>
-<p>Les documents XML sont tous les mêmes pour l'ensembles des scénarios du projet, seuls les feuilles de style XSLT changent pour adapter l'affichage des données.</p>
-<h3 id="scénario-1--afficher-la-liste-des-recettes-avec-leurs-détails">Scénario 1 : Afficher la liste des recettes avec leurs détails</h3>
-<p>Ce premier scénario permet d'afficher la liste des recettes avec les images, informations de santé, ingrédients, et instructions de préparation, comme un utilisateur pourrait le voir sur un site web de recettes. Cette page contient une feuille de style CSS pour améliorer la présentation.</p>
-<h3 id="scénario-2--afficher-la-liste-des-commandes-avec-les-détails-des-clients-et-des-livreurs">Scénario 2 : Afficher la liste des commandes avec les détails des clients et des livreurs</h3>
-<p>Ce scénario permet d'afficher la liste des commandes en cours, avec les informations sur les clients, les livreurs, les recettes commandées, les dates de livraison, et les détails de commande.<br>
-Cette page étant déstinée à un utilisateur interne, la présentation est plus sobre.<br>
-Lorsque l'on clique sur le nom d'une recette, on est redirigé vers la page des recettes défilée à la recette concernée.</p>
-<h3 id="scénario-3--afficher-la-liste-des-commentaires-associés-aux-commandes">Scénario 3 : Afficher la liste des commentaires associés aux commandes</h3>
-<p>Ce scénario permet d'afficher la liste des commentaires des clients, avec les informations sur les clients, les recettes, les notes, et les commentaires. La note est affichée récursivement avec des petites étoiles.
+                <p>\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[margin=3cm]{geometry} % Réduit les marges à 1.5cm de chaque côté</p>
+<p>\title{Rapport mini-projet Base de Données}
+\author{Tristan LARGUIER}
+\date{14/03/2024}</p>
+<p>\begin{document}</p>
+<p>\maketitle
+\newpage
+\section{Hypothèses de travail}
+Pour réaliser ce projet, j'ai fait les hypothèses suivantes :
+\begin{itemize}
+\item Les recettes sont des plats uniques, et ne sont pas des menus.
+\item Les commandes contiennent une seule recette.
+\item Les commentaires sont liés à une commande, et non à une recette.
+\end{itemize}
+\section{Réalisation des objectifs du projet}
+\subsection{Écriture du schéma XML}
+Le schéma XML est disponible dans le fichier \texttt{model.xsd}. Il est composé de 7 éléments principaux :
+\begin{itemize}
+\item \texttt{recettes} : contient la liste des recettes, avec les informations de santé, les ingrédients, et les instructions de préparation.
+\item \texttt{commandes} : contient la liste des commandes, avec les informations sur les clients, les livreurs, les recettes commandées, les dates de livraison, et les détails de commande.
+\item \texttt{commentaires} : contient la liste des commentaires des clients, avec les informations sur les clients, les recettes, les notes, et les commentaires.
+\item \texttt{clients} : contient la liste des clients, avec les informations sur les clients.
+\item \texttt{livreurs} : contient la liste des livreurs, avec les informations sur les livreurs.
+\item \texttt{ingredients} : contient la liste des ingrédients, avec les informations sur les ingrédients.
+\item \texttt{unites} : contient la liste des unités de mesure, avec les informations sur les unités de mesure.
+\end{itemize}</p>
+<p>Chaque élément est identifié par un attribut \texttt{id} unique, sous forme d'une chaîne de caractères. Le premier caractère de l'\texttt{id} est une lettre, et les caractères suivants sont des chiffres. La lettre permet de distinguer les différents types d'éléments. Les recettes ont un \texttt{id} commençant par \texttt{R}, les commandes par \texttt{C}, les commentaires par \texttt{M}, les clients par \texttt{P}, les livreurs par \texttt{L}, les ingrédients par \texttt{I}, et les unités de mesure par \texttt{U}.</p>
+<p>Les documents XML sont tous les mêmes pour l'ensemble des scénarios du projet, seuls les feuilles de style XSLT changent pour adapter l'affichage des données.</p>
+<p>\subsection{Scénario 1 : Afficher la liste des recettes avec leurs détails}
+Ce premier scénario permet d'afficher la liste des recettes avec les images, informations de santé, ingrédients, et instructions de préparation, comme un utilisateur pourrait le voir sur un site web de recettes. Cette page contient une feuille de style CSS pour améliorer la présentation.</p>
+<p>\subsection{Scénario 2 : Afficher la liste des commandes avec les détails des clients et des livreurs}
+Ce scénario permet d'afficher la liste des commandes en cours, avec les informations sur les clients, les livreurs, les recettes commandées, les dates de livraison, et les détails de commande.<br>
+Cette page étant destinée à un utilisateur interne, la présentation est plus sobre.<br>
+Lorsque l'on clique sur le nom d'une recette, on est redirigé vers la page des recettes dédiée à la recette concernée.</p>
+<p>\subsection{Scénario 3 : Afficher la liste des commentaires associés aux commandes}
+Ce scénario permet d'afficher la liste des commentaires des clients, avec les informations sur les clients, les recettes, les notes, et les commentaires. La note est affichée récursivement avec des petites étoiles.
 Malgré sa destination à des utilisateurs externes, la présentation est sobre.<br>
-Lorsque l'on clique sur le nom d'une recette, on est redirigé vers la page des recettes défilée à la recette concernée, comme dans le scénario précédent.</p>
-<h3 id="scénario-4--afficher-la-liste-des-recettes-avec-la-moyenne-des-notes-des-clients">Scénario 4 : Afficher la liste des recettes avec la moyenne des notes des clients</h3>
-<p>Ce scénario a pour objectif de compléter le scénario 1 en affichant la moyenne des notes des clients pour chaque recette. Les informations sont renvoyées au format XML.<br>
-Les données de sortie suivent le schéma suivant :</p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">RECETTES</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">RECETTE</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">NOM</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">NOM</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">NOTE</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">NOTE</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">RECETTE</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">RECETTES</span>&gt;</span>
-</code></pre>
-<p>Ce format minimaliste permet d'accéder directement à l'information recherchée, le nom de la recette pourra facilement être remplacé par l'<code>id</code> de la recette si besoin pour lier à la page du scénario 1.</p>
-<h3 id="scénario-5--afficher-la-liste-des-recettes-en-json">Scénario 5 : Afficher la liste des recettes en JSON</h3>
-<p>Ce scénario a pour objectif d'exporter en JSON la liste des recettes avec les images, informations de santé, ingrédients, et instructions de préparation. Ce scénario pouvant correspondre à une API REST, tous les ID internes sont remplacés par les noms des produits et des quantités. Les informations sont renvoyées au format JSON.</p>
-<h3 id="scénario-6--implémenter-un-programme-python-pour-obtenir-les-recettes-que-lon-peut-faire-avec-les-ingrédients-que-lon-a-dans-le-frigo">Scénario 6 : Implémenter un programme Python pour obtenir les recettes que l'on peut faire avec les ingrédients que l'on a dans le frigo</h3>
-<p>Ce scénario a pour objectif d'implémenter un programme Python pour obtenir les recettes que l'on peut faire avec les ingrédients que l'on a dans le frigo. On peut l'utiliser en lui fournissant une liste d'ingrédients (les noms au format string), et il nous renvoie la liste des noms des recettes que l'on peut faire avec ces ingrédients. Si aucune recette n'est possible, la liste retournée est vide. On peut aussi lui donner le nom d'une recette pour qu'il nous renvoie les ingrédients nécessaires pour la réaliser.</p>
-<h2 id="détails-dimplémentation">Détails d'implémentation</h2>
-<h3 id="utilisation-de-la-récursivité">Utilisation de la récursivité</h3>
-<p>Pour afficher les notes des recettes dans le scénario 3, j'ai utilisé la récursivité pour afficher les étoiles. Cela est permis par le code suivant :</p>
-<pre><code class="language-xslt">&lt;!-- Template for generating stars based on the note --&gt;
-  &lt;xsl:template name=&quot;generateStars&quot;&gt;
-    &lt;xsl:param name=&quot;note&quot;/&gt;
-    &lt;xsl:param name=&quot;counter&quot; select=&quot;1&quot;/&gt;
-    &lt;!-- Condition to check if counter is less than or equal to note --&gt;
-    &lt;xsl:if test=&quot;$counter &amp;lt;= $note&quot;&gt;
-      &lt;!-- Output a star --&gt;
-      &lt;xsl:text disable-output-escaping=&quot;yes&quot;&gt;&amp;#9733;&lt;/xsl:text&gt;
-      &lt;!-- Recursive call to generate next star --&gt;
-      &lt;xsl:call-template name=&quot;generateStars&quot;&gt;
-        &lt;xsl:with-param name=&quot;note&quot; select=&quot;$note&quot;/&gt;
-        &lt;xsl:with-param name=&quot;counter&quot; select=&quot;$counter + 1&quot;/&gt;
-      &lt;/xsl:call-template&gt;
-    &lt;/xsl:if&gt;
-  &lt;/xsl:template&gt;
-</code></pre>
-<h3 id="calcul-de-la-moyenne-des-notes">Calcul de la moyenne des notes</h3>
-<p>Pour calculer la moyenne des notes des recettes dans le scénario 4, j'ai dans un premier temps sélectionné les avis des clients pour chaque recette (un avis étant lié à une livraison et une livraison étant liée à une recette), puis j'ai calculé la moyenne de ces notes.</p>
-<pre><code class="language-xslt">&lt;xsl:template match=&quot;RECETTE&quot;&gt;
-        &lt;recette&gt;
-            &lt;xsl:attribute name=&quot;id&quot;&gt;
-                &lt;xsl:value-of select=&quot;@id&quot;/&gt;
-            &lt;/xsl:attribute&gt;
-            &lt;nom&gt;
-                &lt;xsl:value-of select=&quot;NOM&quot;/&gt;
-            &lt;/nom&gt;
-            &lt;xsl:variable name=&quot;related_comments&quot; select=&quot;//COMMENTAIRE[COMMANDEID=//COMMANDE[RECETTEID=current()/@id]/@id]&quot;/&gt;
-            &lt;moyenne&gt;
-                &lt;xsl:value-of select=&quot;sum($related_comments/NOTE) div count($related_comments)&quot;/&gt;
-            &lt;/moyenne&gt;
-        &lt;/recette&gt;
-    &lt;/xsl:template&gt;
-</code></pre>
+Lorsque l'on clique sur le nom d'une recette, on est redirigé vers la page des recettes dédiée à la recette concernée, comme dans le scénario précédent.</p>
+<p>\subsection{Scénario 4 : Afficher la liste des recettes avec la moyenne des notes des clients}
+Ce scénario a pour objectif de compléter le scénario 1 en affichant la moyenne des notes des clients pour chaque recette. Les informations sont renvoyées au format XML.<br>
+Les données de sortie suivent le schéma suivant :<br>
+\begin{verbatim}
+<RECETTES>
+<RECETTE>
+<NOM>...</NOM>
+<NOTE>...</NOTE>
+</RECETTE>
+</RECETTES>
+\end{verbatim}
+Ce format minimaliste permet d'accéder directement à l'information recherchée, le nom de la recette pourra facilement être remplacé par l'\texttt{id} de la recette si besoin pour lier à la page du scénario 1.</p>
+<p>\subsection{Scénario 5 : Afficher la liste des recettes en JSON}
+Ce scénario a pour objectif d'exporter en JSON la liste des recettes avec les images, informations de santé, ingrédients, et instructions de préparation. Ce scénario pouvant correspondre à une API REST, tous les ID internes sont remplacés par les noms des produits et des quantités. Les informations sont renvoyées au format JSON.</p>
+<p>\subsection{Scénario 6 : Implémenter un programme Python pour obtenir les recettes que l'on peut faire avec les ingrédients que l'on a dans le frigo}
+Ce scénario a pour objectif d'implémenter un programme Python pour obtenir les recettes que l'on peut faire avec les ingrédients que l'on a dans le frigo. On peut l'utiliser en lui fournissant une liste d'ingrédients (les noms au format string), et il nous renvoie la liste des noms des recettes que l'on peut faire avec ces ingrédients. Si aucune recette n'est possible, la liste retournée est vide. On peut aussi lui donner le nom d'une recette pour qu'il nous renvoie les ingrédients nécessaires pour la réaliser.</p>
+<p>\section{Détails d'implémentation}</p>
+<p>\subsection{Utilisation de la récursivité}
+Pour afficher les notes des recettes dans le scénario 3, j'ai utilisé la récursivité pour afficher les étoiles. Cela est permis par le code suivant :
+\begin{verbatim}</p>
+<!-- Template for generating stars based on the note -->
+<p>&lt;xsl:template name=&quot;generateStars&quot;&gt;
+&lt;xsl:param name=&quot;note&quot;/&gt;
+&lt;xsl:param name=&quot;counter&quot; select=&quot;1&quot;/&gt;
+<!-- Condition to check if counter is less than or equal to note -->
+&lt;xsl:if test=&quot;$counter &lt;= $note&quot;&gt;
+<!-- Output a star -->
+&lt;xsl:text disable-output-escaping=&quot;yes&quot;&gt;★&lt;/xsl:text&gt;
+<!-- Recursive call to generate next star -->
+&lt;xsl:call-template name=&quot;generateStars&quot;&gt;
+&lt;xsl:with-param name=&quot;note&quot; select=&quot;$note&quot;/&gt;
+&lt;xsl:with-param name=&quot;counter&quot; select=&quot;$counter + 1&quot;/&gt;
+&lt;/xsl:call-template&gt;
+&lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+\end{verbatim}</p>
+<p>\subsection{Calcul de la moyenne des notes}
+Pour calculer la moyenne des notes des recettes dans le scénario 4, j'ai dans un premier temps sélectionné les avis des clients pour chaque recette (un avis étant lié à une livraison et une livraison étant liée à une recette), puis j'ai calculé la moyenne de ces notes.
+\begin{verbatim}
+&lt;xsl:template match=&quot;RECETTE&quot;&gt;
+<recette>
+&lt;xsl:attribute name=&quot;id&quot;&gt;
+&lt;xsl:value-of select=&quot;@id&quot;/&gt;
+&lt;/xsl:attribute&gt;
+<nom>
+&lt;xsl:value-of select=&quot;NOM&quot;/&gt;
+</nom>
+&lt;xsl:variable name=&quot;related_comments&quot;
+select=&quot;//COMMENTAIRE[COMMANDEID=//COMMANDE[RECETTEID=current()/@id]/@id]&quot;/&gt;
+<moyenne>
+&lt;xsl:value-of select=&quot;sum($related_comments/NOTE) div count($related_comments)&quot;/&gt;
+</moyenne>
+</recette>
+&lt;/xsl:template&gt;
+\end{verbatim}</p>
+<p>\end{document}</p>
 
             <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
             <script async type="text/javascript">
