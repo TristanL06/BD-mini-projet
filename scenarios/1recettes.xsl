@@ -93,11 +93,11 @@
     <li>
       <xsl:value-of select="@quantite"/>
       <xsl:text>&#xA0;</xsl:text>
-      <xsl:value-of select="../../../../UNITES/UNITE[@id=current()/@unite]/@short_name"/>
-      <xsl:if test="../../../../UNITES/UNITE[@id=current()/@unite]/@id != 'U4'">
+      <xsl:value-of select="//UNITE[@id=current()/@unite]/@short_name"/>
+      <xsl:if test="//UNITE[@id=current()/@unite]/@id != 'U4'">
         <xsl:text> de </xsl:text>
       </xsl:if>
-      <xsl:value-of select="../../../../PRODUITS/PRODUIT[@id=current()/@id]/NOM"/>
+      <xsl:value-of select="//PRODUIT[@id=current()/@id]/NOM"/>
     </li>
   </xsl:template>
 

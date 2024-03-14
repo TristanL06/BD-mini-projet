@@ -52,7 +52,7 @@
 
   <xsl:template match="COMMANDEID">
     <xsl:variable name="recette" select="//RECETTES/RECETTE[@id=//COMMANDE[@id=current()]/RECETTEID]"/>
-    <a href="recettes.xml#{$recette/NOM}">
+    <a href="1recettes.xml#{$recette/NOM}">
       <xsl:value-of select="$recette/NOM"/>
     </a>
     <xsl:text> • </xsl:text>

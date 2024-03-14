@@ -56,29 +56,29 @@
   </xsl:template>
 
   <xsl:template match="RECETTEID">
-    <xsl:variable name="recette" select="../../../RECETTES/RECETTE[@id=current()]"/>
+    <xsl:variable name="recette" select="//RECETTE[@id=current()]"/>
     <a href="1recettes.xml#{$recette/NOM}">
       <xsl:value-of select="$recette/NOM"/>
     </a>
   </xsl:template>
 
   <xsl:template match="CLIENTID">
-    <xsl:variables name="client" select="../../../CLIENTS/CLIENT[@id=current()]"/>
-    <xsl:value-of select="../../../CLIENTS/CLIENT[@id=current()]/PRENOM"/>
+    <xsl:variables name="client" select="//CLIENT[@id=current()]"/>
+    <xsl:value-of select="//CLIENT[@id=current()]/PRENOM"/>
     <xsl:text>&#160;</xsl:text>
-    <xsl:value-of select="../../../CLIENTS/CLIENT[@id=current()]/NOM"/>
+    <xsl:value-of select="//CLIENT[@id=current()]/NOM"/>
   </xsl:template>
 
   <xsl:template match="LIVREURID">
-    <xsl:value-of select="../../../LIVREURS/LIVREUR[@id=current()]/NOM"/>
+    <xsl:value-of select="//LIVREUR[@id=current()]/NOM"/>
   </xsl:template>
 
   <xsl:template match="CLIENTID" mode="adresse">
-    <xsl:value-of select="../../../CLIENTS/CLIENT[@id=current()]/ADRESSE"/>
+    <xsl:value-of select="//CLIENT[@id=current()]/ADRESSE"/>
     <br/>
-    <xsl:value-of select="../../../CLIENTS/CLIENT[@id=current()]/CODEPOSTAL"/>
+    <xsl:value-of select="//CLIENT[@id=current()]/CODEPOSTAL"/>
     <xsl:text>&#160;</xsl:text>
-    <xsl:value-of select="../../../CLIENTS/CLIENT[@id=current()]/VILLE"/>
+    <xsl:value-of select="//CLIENT[@id=current()]/VILLE"/>
   </xsl:template>
 
 </xsl:stylesheet>
